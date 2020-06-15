@@ -45,6 +45,15 @@
   height: 480px;
   margin-right: 10px;
 }
+.logo_logo {
+  display: block;
+  width: 40px;
+  height: 40px;
+}
+.service_ico_img_clone {
+  width: 28px;
+  height: 28px;
+}
 * {
   padding: 0px;
   margin: 0px;
@@ -54,6 +63,9 @@
 img {
   border: 0;
   vertical-align: middle;
+}
+.mod_container {
+  margin-bottom: 20px;
 }
 /*左侧和右侧的导航栏样式*/
 .shortcut {

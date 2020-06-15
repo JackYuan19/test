@@ -1,0 +1,99 @@
+#app{
+  position: relative;
+  z-index: 10;
+}
+#J_seckll{
+  outline: none;
+  position: relative;
+  z-index: 10;
+}
+.seckill{
+  height: 260px;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 10;
+}
+.seckill__inner{
+  background-color: #fff;
+}
+.jd_container{
+  width: 1190px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.seckill__inner{
+  height: 100%;
+  overflow: hidden;
+}
+.seckill-countdown{
+  position: relative;
+  float: left;
+  width: 190px;
+  height: 100%;
+  color: #fff;
+  background-color: #e83632;
+  background-image: url('/image/4a15d8883775742e3efbb850ae14def7.png');
+  background-size: contain;
+  background-position: 50%;
+  background-repeat:no-repeat;
+  .countdown-desc{
+    margin-top: 90px;
+    font-size: 14px;
+    text-align: center;
+    strong{
+      font-size: 18px;
+      padding-left: 2px;
+      vertical-align: middle;
+      display: inline-block;
+      margin-top: -3px;
+    }
+  }
+  .countdown-main{
+    margin-left: auto;
+    margin-right: auto;
+    width: 130px;
+    height: 30px;
+    margin-top: 10px;
+    display: block;
+    .timmer__unit{
+      position: relative;
+      float: left;
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      background-color: #2f3430;
+      margin-right: 20px;
+      color: white;
+      font-size: 20px;
+      line-height: 30px;
+      &:after{
+        content: ":";
+        display: block;
+        position: absolute;
+        right: -20px;
+        font-weight: bolder;
+        font-weight: bolder;
+        font-size: 18px;
+        width: 20px;
+        height: 100%;
+        top: 0;
+      }
+    }
+    .timmer__unit--second{
+      margin-right: 0 ;
+      &:after{
+        display: none;
+      }
+    }
+   }
+}
+.timmer{
+  font-weight: 700;
+}
+.countdown-title{
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 31px;
+}

@@ -1,6 +1,76 @@
 (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
 'use strict';
 
+exports.bottomSeckill = function () {
+  (function () {
+    // 拿到countdown-desc中的strong
+    var strong = document.getElementsByClassName('countdown-desc')[0].children;
+    // 拿到timmer__unit--hour中的元素
+    var timmer_unit_hours = document.getElementsByClassName('timmer__unit--hour')[0];
+    // 拿到timmer__unit--minute中的元素
+    var timmer_unit_minute = document.getElementsByClassName('timmer__unit--minute')[0];
+    // 拿到timmer__unit--second中的元素
+    var timmer__unit_second = document.getElementsByClassName('timmer__unit--second')[0];
+    // 获取时间的
+    function getDate() {
+      // 判断时间戳
+      var date = new Date();
+      var minute, secode, hours, touch;
+      /*var afterTimer=+new Date(`${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()} 16:00:00`);
+      var nowTimer =+new Date(); 
+      var timer = (afterTimer - nowTimer) / 1000;
+      var timerid = setInterval(() => {
+        timer --;
+        if(timer <= 0) {
+          clearInterval(timerid);
+        }
+        // 2.3
+        hours = Math.floor(timer/60/60%24);
+        minute = Math.floor(timer/60%60);
+        secode = Math.floor(timer%60);
+        timmer_unit_hours.innerText = hours;
+        timmer_unit_minute.innerText = minute;
+        timmer__unit_second.innerText = secode;
+      },1000);*/
+      var timerid = setInterval(function () {
+        if (date.getHours() >= 14 && date.getHours() < 16) {
+          var afterTimer = +new Date(date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + date.getDate() + ' 16:00:00');
+          touch = '16:00';
+        } else if (date.getHours() >= 16 && date.getHours() < 18) {
+          var afterTimer = +new Date(date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + date.getDate() + ' 18:00:00');
+          touch = '18:00';
+        } else if (date.getHours() >= 18 && date.getHours() < 20) {
+          var afterTimer = +new Date(date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + date.getDate() + ' 20:00:00');
+          touch = '20:00';
+        } else if (date.getHours() >= 20 && date.getHours() < 22) {
+          var afterTimer = +new Date(date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + date.getDate() + ' 22:00:00');
+          touch = '22:00';
+        } else if (date.hours() >= 8 && date.hours() < 10) {
+          var afterTimer = +new Date(date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + date.getDate() + ' 10:00:00');
+          touch = '10:00';
+        } else if (date.hours() >= 10 && date.hours() < 12) {
+          var afterTimer = +new Date(date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + date.getDate() + ' 12:00:00');
+          touch = '12:00';
+        } else {
+          var afterTimer = +new Date(date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + (date.getDate() + 1) + ' 8:00:00');
+          touch = '08:00';
+        }
+        var timer = (afterTimer - new Date()) / 1000;
+        hours = Math.floor(timer / 60 / 60 % 24);
+        minute = Math.floor(timer / 60 % 60);
+        secode = Math.floor(timer % 60);
+        timmer_unit_hours.innerText = hours;
+        timmer_unit_minute.innerText = minute;
+        timmer__unit_second.innerText = secode;
+        strong[0].innerText = touch;
+      }, 1000);
+    }
+    getDate();
+  })();
+};
+},{}],2:[function(require,module,exports){
+'use strict';
+
 var _index = require('./index');
 
 exports.middleNavImage = function () {
@@ -258,7 +328,7 @@ exports.middleRight = function () {
     serviceItemClick();
   })();
 };
-},{"./index":3}],2:[function(require,module,exports){
+},{"./index":4}],3:[function(require,module,exports){
 'use strict';
 
 /* 中间搜索框*/
@@ -332,7 +402,7 @@ exports.navBtnRandom = function () {
   };
   start();
 };
-},{}],3:[function(require,module,exports){
+},{}],4:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -344,7 +414,7 @@ var filterArr = exports.filterArr = function filterArr(arr, index) {
     });
     return filterArr;
 };
-},{}],4:[function(require,module,exports){
+},{}],5:[function(require,module,exports){
 'use strict';
 
 var _shortcut = require('./shortcut');
@@ -353,13 +423,16 @@ var _header = require('./header');
 
 var _center = require('./center');
 
+var _bottom = require('./bottom');
+
 (0, _shortcut.shortcutLeft)();
 (0, _header.searchRandom)();
 (0, _header.navBtnRandom)();
 (0, _center.middleNavImage)();
 (0, _center.middleNavRight)();
 (0, _center.middleRight)();
-},{"./center":1,"./header":2,"./shortcut":5}],5:[function(require,module,exports){
+(0, _bottom.bottomSeckill)();
+},{"./bottom":1,"./center":2,"./header":3,"./shortcut":6}],6:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -445,4 +518,4 @@ var shortcutLeft = exports.shortcutLeft = function shortcutLeft() {
     itemClick();
   })();
 }; // 工具包
-},{"./index":3}]},{},[4]);
+},{"./index":4}]},{},[5]);
