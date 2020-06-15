@@ -10,9 +10,11 @@
     <link rel="stylesheet" type="text/css" href="/css/header.css">
     <!--引入中间样式-->
     <link rel="stylesheet" type="text/css" href="/css/middle.css">
+    <!--引入底层样式-->
+    <link rel="stylesheet" type="text/css" href="/css/bottom.css">
 </head>
 <body>
-    <div>
+    <div class="mod_container">
        <!--顶部导航栏-->
        <div class="shortcut">
           <div class="w" aria-label="顶部导航">
@@ -935,6 +937,34 @@
            </div>
          </div>
        </div>
+    </div>
+    <div id="app">
+      <div id="J_app">
+        <div id="J_seckll" tabindex="0">
+          <div class="seckill" aria-label="京东秒杀">
+            <div class="jd_container seckill__inner">
+              <a href="javascript:void(0)" class="seckill-countdown">
+                <div class="countdown-title">京东秒杀</div> 
+               <div>
+                 <div class="countdown-desc">
+                   <strong>00:00</strong>
+                   <span>点场倒计时</span>
+                 </div>
+                 <span class="timmer countdown-main">
+                   <span class="timmer__unit timmer__unit--hour">
+                     0
+                   </span>
+                   <span class="timmer__unit timmer__unit--minute">
+                   0
+                   </span>
+                   <span class="timmer__unit timmer__unit--second">0</span>
+                 </span>
+               </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="/dist/build.js"></script>
 </body>
