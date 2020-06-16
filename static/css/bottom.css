@@ -96,3 +96,129 @@
   font-weight: 700;
   margin-top: 31px;
 }
+.seckill-list {
+  position: relative;
+  float: left;
+  width: 800px;
+  height: 100%;
+  overflow: hidden;
+}
+.seckill-list .slider_control {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+.seckill-list .slider_control:hover {
+  background: rgba(0, 0, 0, 0.4);
+}
+.seckill-list .seckill-item {
+  position: relative;
+  width: 200px;
+  height: 260px;
+  display: inline-block;
+}
+.seckill-list .seckill-item:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 1px;
+  height: 200px;
+  background: linear-gradient(180deg, white, #eeeeee, white);
+  transform: translateY(-50%);
+}
+.seckill-list .seckill-item .seckill-item__image {
+  width: 140px;
+  height: 140px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+.seckill-list .seckill-item__name {
+  font-size: 12px;
+  font-weight: 400;
+  color: #333;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.seckill-list .seckill-item__name {
+  width: 160px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 13px;
+}
+.seckill-list .seckill-item__price {
+  border: 1px solid #e1251b;
+  position: relative;
+  box-sizing: border-box;
+  line-height: 24px;
+  overflow: hidden;
+  background-color: #e1251b;
+}
+.seckill-list .seckill-item__price {
+  width: 160px;
+  height: 24px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 7px;
+}
+.seckill-list .seckill-item__price .price-miaosha {
+  width: 92px;
+  height: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  float: left;
+}
+.seckill-list .seckill-item__price .price-miaosha:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-color: transparent white transparent transparent;
+  border-style: solid;
+  border-width: 22px 8px 0 0;
+  position: absolute;
+  top: 0;
+  left: 84px;
+}
+.seckill-list .seckill-item__price .price-miaosha i {
+  font-size: 12px;
+  font-weight: 400;
+  padding-right: 2px;
+  font-style: normal;
+}
+.seckill-list .price-origin {
+  height: 100%;
+  width: 66px;
+  float: right;
+  background: #fff;
+  text-align: center;
+  font-size: 12px;
+  line-height: 22px;
+  box-sizing: border-box;
+  text-decoration: line-through;
+  vertical-align: top;
+  color: #999;
+  font-weight: bolder;
+}
+.seckill-list .price-origin i {
+  font-style: normal;
+}
+.slider_item {
+  height: 100%;
+  min-height: 1px;
+}
+.lazyimg {
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+}
+.lazyimg_loaded .lazyimg_img {
+  opacity: 1;
+}
+.lazyimg_img {
+  width: 100%;
+  height: 100%;
+}

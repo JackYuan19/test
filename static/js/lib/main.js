@@ -15,3 +15,4 @@ var _bottom = require('./bottom');
 (0, _center.middleNavRight)();
 (0, _center.middleRight)();
 (0, _bottom.bottomSeckill)();
+(0, _bottom.bottomSlider)();

@@ -45,10 +45,10 @@ exports.bottomSeckill = function () {
         } else if (date.getHours() >= 20 && date.getHours() < 22) {
           var afterTimer = +new Date(date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + date.getDate() + ' 22:00:00');
           touch = '22:00';
-        } else if (date.hours() >= 8 && date.hours() < 10) {
+        } else if (date.getHours() >= 8 && date.getHours() < 10) {
           var afterTimer = +new Date(date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + date.getDate() + ' 10:00:00');
           touch = '10:00';
-        } else if (date.hours() >= 10 && date.hours() < 12) {
+        } else if (date.getHours() >= 10 && date.getHours() < 12) {
           var afterTimer = +new Date(date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + date.getDate() + ' 12:00:00');
           touch = '12:00';
         } else {
@@ -66,6 +66,71 @@ exports.bottomSeckill = function () {
       }, 1000);
     }
     getDate();
+  })();
+};
+exports.bottomSlider = function () {
+  (function () {
+    // 拿到slider_wrapper中的元素
+    var sliderWrapper = document.getElementsByClassName('slider_wrapper')[2];
+    // 拿到slider_control_prev中的元素
+    var sliderControlPrev = document.getElementsByClassName('slider_control_prev')[2];
+    // 拿到slider_control_next中的元素
+    var sliderControlPNext = document.getElementsByClassName('slider_control_next')[2];
+    var speed = 0,
+        timer = null;
+    function start() {
+      // 定时器移动
+      timer = setInterval(function () {
+        if (speed === -3200) {
+          speed = 0;
+        } else {
+          speed -= 400;
+        }
+        sliderWrapper.style.marginLeft = speed + 'px';
+      }, 8000);
+    }
+    function wrapper(speed) {
+      sliderWrapper.style.marginLeft = speed + 'px';
+    }
+    function startClick() {
+      sliderControlPrev.addEventListener('click', function () {
+        // 停止定时器
+        clearInterval(timer);
+        speed += 400;
+        if (speed >= 0) {
+          speed = -3200;
+        }
+        setTimeout(function () {
+          clearInterval(timer);
+          start();
+        }, 2000);
+        wrapper(speed);
+      });
+      sliderControlPNext.addEventListener('click', function () {
+        clearInterval(timer);
+        speed -= 400;
+        if (speed === -3200) {
+          speed = 0;
+        }
+        setTimeout(function () {
+          clearInterval(timer);
+          start();
+        });
+        wrapper(speed);
+      });
+    }
+    function wrapperMouse() {
+      sliderWrapper.addEventListener('mouseover', function () {
+        clearInterval(timer);
+      });
+      sliderWrapper.addEventListener('mouseleave', function () {
+        clearInterval(timer);
+        start();
+      });
+    }
+    start();
+    startClick();
+    wrapperMouse();
   })();
 };
 },{}],2:[function(require,module,exports){
@@ -432,6 +497,7 @@ var _bottom = require('./bottom');
 (0, _center.middleNavRight)();
 (0, _center.middleRight)();
 (0, _bottom.bottomSeckill)();
+(0, _bottom.bottomSlider)();
 },{"./bottom":1,"./center":2,"./header":3,"./shortcut":6}],6:[function(require,module,exports){
 'use strict';
 
