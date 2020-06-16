@@ -12,7 +12,8 @@ router.get('/',async(context) => {
     imageArr: data.imageArr,
     imageArr1: data.imageArr1,
     imageArr2: data.imageArr2,
-    imageUrl: data.imageUrl
+    imageUrl: data.imageUrl,
+    imageBottom: data.imageBottom
   });
 });
 
@@ -24,4 +25,6 @@ render(app,{
 
 app.use(router.routes()).use(router.allowedMethods());
 app.use(static('./static/'));
-app.listen(4000);
+app.listen(4000,() => {
+  console.log('ruing 4000');
+});
