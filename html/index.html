@@ -961,6 +961,32 @@
                  </span>
                </div>
               </a>
+              <div class="seckill-list">
+                <div class="slider">
+                  <button class="slider_control slider_control_prev"><</button>
+                  <div class="slider_list" style="overflow: hidden;">
+                    <div class="slider_wrapper" style="opacity: 1;width: 5600px;margin-left:0px;">
+                     {{each imageBottom list index}}
+                     <a href="javascript:void(0);" class="slider_item seckill-item" style="width:200px;float:left;">
+                        <div class="lazyimg lazyimg_loaded seckill-item__image">
+                           <img src="{{list.imageUrl}}" class="lazyimg_img">
+                        </div>
+                        <h6 class="seckill-item__name">{{list.content}}</h6>
+                        <div class="seckill-item__price">
+                           <span class="price-miaosha">
+                              <i>￥</i><span>{{list.currentPrice}}</span>
+                           </span>
+                           <span class="price-origin">
+                              <i>￥</i><span>{{list.previousPrice}}</span>
+                           </span>
+                        </div>                       
+                     </a>
+                     {{/each}}
+                    </div>
+                  </div>
+                  <button class="slider_control slider_control_next">></button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
