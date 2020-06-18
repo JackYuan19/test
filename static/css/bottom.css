@@ -222,3 +222,93 @@
   width: 100%;
   height: 100%;
 }
+.seckill-brand {
+  position: relative;
+  float: left;
+  width: 200px;
+  height: 260px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.seckill-brand .brand-item {
+  position: relative;
+  height: 240px;
+}
+.seckill-brand .brand-item .item-image {
+  transition: opacity 0.2s ease;
+}
+.seckill-brand .brand-item .item-image {
+  width: 120px;
+  height: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+.seckill-brand .brand-item .item-image .lazyimg_loaded {
+  transition: background 0.2s linear, opacity 0.2s linear !important;
+  background: transparent;
+}
+.seckill-brand .brand-item .item-image img {
+  width: 100%;
+  height: 100%;
+}
+.seckill-brand .brand-item .item-info {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.5), rgba(220, 224, 236, 0.5));
+  text-align: center;
+  font-size: 14px;
+  position: relative;
+}
+.seckill-brand .brand-item .item-info {
+  width: 100%;
+  height: 90px;
+  margin-top: 10px;
+  box-sizing: border-box;
+}
+.seckill-brand .brand-item .item-info-title {
+  color: #333;
+}
+.seckill-brand .brand-item .item-info-promo {
+  color: #333;
+  font-weight: 700;
+}
+.seckill-brand .brand-item .item-info-action {
+  color: #e1251b;
+  border-radius: 14px;
+  width: 82px;
+  height: 24px;
+  box-sizing: border-box;
+  text-align: center;
+  display: inline-block;
+  line-height: 22px;
+  font-weight: 700;
+  padding-left: 4px;
+  font-size: 12px;
+  border: 1px solid #e1251b;
+  margin-top: 4px;
+}
+.seckill-brand__slider {
+  width: 100%;
+  height: 100%;
+}
+.seckill-brand__slider .slider_indicators {
+  bottom: 16px;
+}
+.slider_indicators {
+  position: absolute;
+  left: 50%;
+  font-size: 0;
+  text-align: center;
+}
+.slider_indicators_btn {
+  position: relative;
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  margin-right: 4px;
+  border-radius: 50%;
+  background: #999;
+  transition: background 0.2s ease;
+}
+.slider_indicators_btn_active {
+  background: #e1251b;
+}

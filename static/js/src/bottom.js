@@ -79,39 +79,51 @@ exports.bottomSlider = () => {
       timer = setInterval(() => {
         if(speed === -3200) {
           speed = 0;
+          sliderWrapper.style.transition = 'none 0s ease 0s';
+          sliderWrapper.style.transform = `translate3d(${speed}px, 0px, 0px)`;
         } else {
-          speed -= 400;
+          speed -= 800;
+          sliderWrapper.style.transition = 'all 500ms ease 0s';
+          sliderWrapper.style.transform = `translate3d(${speed}px, 0px, 0px)`;
+          setTimeout(() => {
+            sliderWrapper.style.transition = 'none 0s ease 0s';
+          },500); 
         }
-        sliderWrapper.style.marginLeft = speed + 'px';
       },8000);
     }
     function wrapper(speed) {
-      sliderWrapper.style.marginLeft = speed + 'px';
+      sliderWrapper.style.transition = 'all 500ms ease 0s';
+      sliderWrapper.style.transform = `translate3d(${speed}px, 0px, 0px)`
+      setTimeout(() => {
+        clearInterval(timer);
+        sliderWrapper.style.transition = 'none 0s ease 0s';
+        start();
+      },2000);
     }
     function startClick() {
       sliderControlPrev.addEventListener('click',function() {
         // 停止定时器
         clearInterval(timer);
-        speed += 400;
         if(speed >= 0) {
-         speed = -3200; 
+          speed = -3200; 
+          sliderWrapper.style.transition = 'none 0s ease 0s';
+          sliderWrapper.style.transform = `translate3d(${speed}px, 0px, 0px)`;
+          return;
+        } else {
+          speed += 800;
         }
-        setTimeout(() => {
-          clearInterval(timer);
-          start();
-        },2000);
         wrapper(speed);
       });
       sliderControlPNext.addEventListener('click',function() {
         clearInterval(timer);
-        speed -= 400;
         if(speed === -3200) {
-          speed = 0
+          speed = 0;
+          sliderWrapper.style.transition = 'none 0s ease 0s';
+          sliderWrapper.style.transform = `translate3d(${speed}px, 0px, 0px)`;
+          return;
+        } else {
+          speed -= 800;
         }
-        setTimeout(() => {
-          clearInterval(timer);
-          start();
-        });
         wrapper(speed);
       });
     }
@@ -128,4 +140,80 @@ exports.bottomSlider = () => {
     startClick();
     wrapperMouse();
   }())
+}
+exports.bottomWrapper = () => {
+  (function(){
+    // 拿到slider_wrapper元素
+    const sliderWrapper = document.getElementsByClassName('slider_wrapper')[3];
+    // 拿到button按钮slider_indicators_btn 
+    const sliderIndicatorsBtn = document.getElementsByClassName('slider_indicators_btn');
+    // 定义speed
+    let speed = 0,timer = null;
+    //sliderWrapper.style.transition = '500ms ease-in-out 0s';
+    //sliderWrapper.style.transform = "translate3d(-180px, 0px, 0px)";
+    function start() {
+      timer = setInterval(() => {
+        if(speed === -540) {
+          speed = -180;
+          sliderWrapper.style.transition = 'none 0s ease 0s';
+          sliderWrapper.style.transform = `translate3d(${speed}px, 0px, 0px)`;
+        } else {
+          speed += -180;
+          if(speed === -360) {
+            sliderIndicatorsBtn[8].setAttribute('class','slider_indicators_btn slider_indicators_btn_active');
+            sliderIndicatorsBtn[9].setAttribute('class','slider_indicators_btn');
+          } else {
+            sliderIndicatorsBtn[9].setAttribute('class','slider_indicators_btn slider_indicators_btn_active');
+            sliderIndicatorsBtn[8].setAttribute('class','slider_indicators_btn');
+          }
+          sliderWrapper.style.transition = '500ms ease-in-out 0s';
+          sliderWrapper.style.transform = `translate3d(${speed}px, 0px, 0px)`;
+          setTimeout(() => {
+            sliderWrapper.style.transition = 'none 0s ease 0s';
+          },500);
+        }
+      },2000);
+    }
+    function stopSlider(index,speed) {
+      sliderWrapper.style.transition = '500ms ease-in-out 0s';
+      sliderWrapper.style.transform = `translate3d(${speed}px, 0px, 0px)`;
+      if(index === 0) {
+        sliderIndicatorsBtn[8].setAttribute('class','slider_indicators_btn slider_indicators_btn_active');
+        sliderIndicatorsBtn[9].setAttribute('class','slider_indicators_btn');
+      } else {
+        sliderIndicatorsBtn[9].setAttribute('class','slider_indicators_btn slider_indicators_btn_active');
+        sliderIndicatorsBtn[8].setAttribute('class','slider_indicators_btn');
+      }
+      setTimeout(() => {
+        sliderWrapper.style.transition = 'none 0s ease 0s';
+      },500);
+      setTimeout(() => {
+        clearInterval(timer);
+        start();
+      },1500);
+    }
+    // 给sliderIndicatorsBtn添加移入事件
+    function sliderIndicatorsBtnOver() {
+      sliderIndicatorsBtn[8].addEventListener('mouseover',function() {
+        clearInterval(timer);
+        if(speed === -180) {
+          speed = 0;
+        } else {
+          speed = -360;
+        }
+        stopSlider(0,speed);
+      });
+      sliderIndicatorsBtn[9].addEventListener('mouseover',function() {
+        clearInterval(timer);
+        if(speed === 0) {
+          speed = -180;
+        } else {
+          speed = -540;
+        }
+        stopSlider(1,speed);
+      });
+    }
+    start();
+    sliderIndicatorsBtnOver();
+  }());
 }

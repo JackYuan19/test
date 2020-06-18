@@ -225,3 +225,93 @@
   width: 100%;
   height: 100%;
 }
+.seckill-brand{
+  position: relative;
+  float: left;
+  width: 200px;
+  height: 260px;
+  padding: 10px;
+  box-sizing: border-box;
+  .brand-item{
+    position: relative;
+    height: 240px;
+    .item-image{
+      transition: opacity .2s ease;
+    }
+    .item-image{
+      width: 120px;
+      height: 120px;
+      margin-left:auto;
+      margin-right: auto;
+      margin-top: 20px;
+      .lazyimg_loaded{
+        transition: background .2s linear,opacity .2s linear!important;
+        background: transparent;
+      }
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .item-info{
+      background: linear-gradient(180deg,rgba(255,255,255,.5),rgba(220,224,236,.5));
+      text-align: center;
+      font-size: 14px;
+      position: relative;
+    }
+    .item-info{
+      width: 100%;
+      height: 90px;
+      margin-top: 10px;
+      box-sizing: border-box;
+    }
+    .item-info-title{
+      color: #333;
+    }
+    .item-info-promo{
+      color: #333;
+      font-weight: 700;
+    }
+    .item-info-action{
+      color: #e1251b;
+      border-radius: 14px;
+      width: 82px;
+      height: 24px;
+      box-sizing: border-box;
+      text-align: center;
+      display: inline-block;
+      line-height: 22px;
+      font-weight: 700;
+      padding-left: 4px;
+      font-size: 12px;
+      border: 1px solid #e1251b;
+      margin-top: 4px;
+    }
+  }
+}
+.seckill-brand__slider{
+  width: 100%;
+  height: 100%;
+  .slider_indicators{
+    bottom: 16px;
+  }
+}
+.slider_indicators{
+  position: absolute;
+  left: 50%;
+  font-size: 0;
+  text-align: center;
+}
+.slider_indicators_btn{
+  position: relative;
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  margin-right: 4px;
+  border-radius: 50%;
+  background: #999;
+  transition: background .2s ease;
+}
+.slider_indicators_btn_active{
+  background: #e1251b;
+}
