@@ -769,38 +769,46 @@
                   <div class="slider_list" style="overflow: hidden;">
                      <div class="slider_wrapper" style="opacity: 1; width: 5900px;">
                         <li class="slider_item focus-slider__item focus-item" 
-                        style="opacity:1;z-index:1;float:left;position:relative;left:0px;z-index:1">
+                        style="opacity:1;z-index:1;float:left;position:relative;left:0px;z-index:1;
+                               transition:opacity 300ms ease-in-out 0s">
                           <div class="promotional-tag__618 promotional-tag__618--square" 
                            style="background-image:url(./image/9.jpg.webp)">
                          </div> 
                          <img src="./image/1.jpg.webp" class="focus-item-img" alt="主会场秒"/>
                         </li>
                         <li class="slider_item focus-slider__item focus-item" 
-                              style="opacity:0;z-index:0;float:left;position:relative;left:-590px;z-index:1">
+                              style="opacity:0;z-index:0;float:left;position:relative;left:-590px;z-index:1;
+                                     transition:opacity 300ms ease-in-out 0s">
                            <img src="./image/2.jpg.webp" class="focus-item-img"/>
                         </li>
                         <li class="slider_item focus-slider__item focus-item" 
-                        style="opacity:0;z-index:0;float:left;position:relative;left:-1180px;z-index:1">
+                        style="opacity:0;z-index:0;float:left;position:relative;left:-1180px;z-index:1;
+                               transition:opacity 300ms ease-in-out 0s">
                            <img src="./image/3.jpg.webp" class="focus-item-img"/>
                         </li>
                         <li class="slider_item focus-slider__item focus-item" 
-                        style="opacity:0;z-index:0;float:left;position:relative;left:-1770px;z-index:1">
+                        style="opacity:0;z-index:0;float:left;position:relative;left:-1770px;z-index:1;
+                               transition:opacity 300ms ease-in-out 0s">
                            <img src="./image/4.jpg" class="focus-item-img"/>
                         </li>
                         <li class="slider_item focus-slider__item focus-item" 
-                        style="opacity:0;z-index:0;float:left;position:relative;left:-2360px;z-index:1">
+                        style="opacity:0;z-index:0;float:left;position:relative;left:-2360px;z-index:1;
+                               transition:opacity 300ms ease-in-out 0s">
                            <img src="./image/5.jpg.webp" class="focus-item-img"/>
                         </li>
                         <li class="slider_item focus-slider__item focus-item" 
-                        style="opacity:0;z-index:0;float:left;position:relative;left:-2950px;z-index:1">
+                        style="opacity:0;z-index:0;float:left;position:relative;left:-2950px;z-index:1;
+                               transition:opacity 300ms ease-in-out 0s">
                            <img src="./image/6.jpg.webp" class="focus-item-img"/>
                         </li>
                         <li class="slider_item focus-slider__item focus-item" 
-                        style="opacity:0;z-index:0;float:left;position:relative;left:-3540px;z-index:1">
+                        style="opacity:0;z-index:0;float:left;position:relative;left:-3540px;z-index:1;
+                               transition:opacity 300ms ease-in-out 0s">
                            <img src="./image/7.jpg.webp" class="focus-item-img"/>
                         </li>
                         <li class="slider_item focus-slider__item focus-item" 
-                        style="opacity:0;z-index:0;float:left;position:relative;left:-4130px;z-index:1">
+                        style="opacity:0;z-index:0;float:left;position:relative;left:-4130px;z-index:1;
+                               transition:opacity 300ms ease-in-out 0s">
                            <img src="./image/8.jpg.webp" class="focus-item-img"/>
                         </li>
                      </div> 
@@ -824,7 +832,8 @@
                                 style="display: none;"><</button>
                         <div class="slider_wrapper" style="width: 950px; opacity: 1;">
                            <li class="slider_item focus-slider__item focus-item slider_prev"
-                               style="float: left; position: relative; width: 190px; z-index:1; opacity: 1;">
+                               style="float: left; position: relative; width: 190px; z-index:1; opacity: 1;
+                                      transition: opacity 300ms ease-in-out 0s;">
                               <div class="focus-item__recommend ">
                                  {{each imageArr2 value index}}
                                   <img src="{{value}}" class="recommend-item__image"/>
@@ -832,7 +841,8 @@
                               </div>
                            </li>
                            <li class="slider_item focus-slider__item focus-item slider_prev"
-                               style="float: left; position: relative; width: 190px; z-index:0; opacity: 0; left:-190px;">
+                               style="float: left; position: relative; width: 190px; z-index:0; opacity: 0; left:-190px;
+                                      transition: opacity 300ms ease-in-out 0s;">
                               <div class="focus-item__recommend ">
                                 {{each imageArr1 value index}}
                                   <img src="{{value}}" class="recommend-item__image"/>
@@ -840,7 +850,8 @@
                               </div>
                            </li>
                            <li class="slider_item focus-slider__item focus-item slider_prev"
-                               style="float: left; position: relative; width: 190px; z-index:0; opacity: 0; left:-380px;">
+                               style="float: left; position: relative; width: 190px; z-index:0; opacity: 0; left:-380px;
+                                      transition: opacity 300ms ease-in-out 0s;">
                               <div class="focus-item__recommend ">
                                 {{each imageArr value index}}
                                   <img src="{{value}}" class="recommend-item__image"/>
@@ -965,7 +976,8 @@
                 <div class="slider">
                   <button class="slider_control slider_control_prev"><</button>
                   <div class="slider_list" style="overflow: hidden;">
-                    <div class="slider_wrapper" style="opacity: 1;width: 5600px;margin-left:0px;">
+                    <div class="slider_wrapper" style="opacity: 1;width: 5600px;
+                                                transition:none 0s ease 0s; transform: translate3d(0px, 0px, 0px);">
                      {{each imageBottom list index}}
                      <a href="javascript:void(0);" class="slider_item seckill-item" style="width:200px;float:left;">
                         <div class="lazyimg lazyimg_loaded seckill-item__image">
@@ -986,6 +998,35 @@
                   </div>
                   <button class="slider_control slider_control_next">></button>
                 </div>
+              </div>
+              <div class="seckill-brand">
+                 <div class="slider seckill-brand__slider">
+                    <div class="slider_list" style="overflow: hidden;">
+                      <div class="slider_wrapper" style="opacity: 1; width: 720px;
+                      transform: translate3d(0px, 0px, 0px); transition: none 0s ease 0s; display: block;">
+                        {{each imageUrl1 list index}}
+                        <a class="slider_item brand-item" href="javascript:void(0);" style="float:left;width:180px;">
+                           <div class="item-image" >
+                             <div class="lazyimg lazyimg_loaded">
+                                <img src="{{list.imageUrl}}" class="lazyimg_img">
+                             </div>
+                           </div>
+                           <div class="item-info">
+                             <p class="item-info-title">{{list.content}}</p>
+                             <p class="item-info-promo">{{list.content1}}</p>
+                             <div class="item-info-action">{{list.icon}}
+                                <i class="iconfont">></i></div>
+                           </div>
+                        </a>
+                        {{/each}}
+
+                      </div>
+                    </div>
+                    <div class="slider_indicators" style="margin-left: -6px;">
+                      <i class="slider_indicators_btn slider_indicators_btn_active"></i>
+                      <i class="slider_indicators_btn"></i>
+                    </div>
+                 </div>
               </div>
             </div>
           </div>
