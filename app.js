@@ -13,7 +13,8 @@ router.get('/',async(context) => {
     imageArr1: data.imageArr1,
     imageArr2: data.imageArr2,
     imageUrl: data.imageUrl,
-    imageBottom: data.imageBottom
+    imageBottom: data.imageBottom,
+    imageUrl1: data.imageUrl1
   });
 });
 
