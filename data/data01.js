@@ -150,4 +150,31 @@ exports.imageBottom = [
     previousPrice: 2899.00,
     content: '15.6英寸 超簿本 轻薄本 笔记本电脑轻薄 超级本 学生网上课堂电脑 远程办公电脑 笔记本电脑 银白色-超窄边框Intel-J3455 8G内存SSD256G硬盘'
   }
+];
+
+exports.imageUrl1 = [
+  {
+    imageUrl: '/image/c9b4cde4ffa2aae2.jpg.webp',
+    content: '京东超市限时抢购',
+    content1: '爆款奶粉低至8折',
+    icon: '品类秒杀'
+  },
+  {
+    imageUrl: '/image/7ded356571a6571e.jpg.webp',
+    content: '李宁品牌秒杀',
+    content1: '低至9.9',
+    icon: '大牌闪购'
+  },
+  {
+    imageUrl: '/image/c9b4cde4ffa2aae2.jpg.webp',
+    content: '京东超市限时抢购',
+    content1: '爆款奶粉低至8折',
+    icon: '品类秒杀'
+  },
+  {
+    imageUrl: '/image/7ded356571a6571e.jpg.webp',
+    content: '李宁品牌秒杀',
+    content1: '低至9.9',
+    icon: '大牌闪购'
+  }
 ]
