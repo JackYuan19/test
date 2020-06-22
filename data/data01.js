@@ -177,4 +177,192 @@ exports.imageUrl1 = [
     content1: '低至9.9',
     icon: '大牌闪购'
   }
+];
+
+exports.imageUrl2 = [
+  {
+    imageUrl: './image/6020f7c334924901.jpg!q70.jpg.webp',
+    content: '中药喷雾！去脚气脚痒脚臭干裂',
+    title: '38天最低价',
+    presentPrice: 9.9,
+    originalPrice: 19.9,
+    arr: [
+      {
+        imageUrl: './image/0a3fcfd83e405470.jpg!q70.jpg.webp',
+        title: '207天最低价',
+        content: '朗力福 控油橄榄柔顺洗发露',
+        presentPrice: 24.5,
+        originalPrice: 35
+      },
+      {
+        imageUrl: './image/090829e337fed75a.jpg!q70.jpg.webp',
+        title: '93天最低价',
+        content: '24K精华液紧致修护细化毛孔',
+        presentPrice: 9.9,
+        originalPrice: 19.9
+      },
+      {
+        imageUrl: './image/a3f814854d9ea16a.png!q70.jpg.webp',
+        title: '140天最低价',
+        content: '顺丰配送进口红心火龙果4斤',
+        presentPrice: 35.9,
+        originalPrice: 59
+      },
+      {
+        imageUrl: './image/34b038ded4275f73.jpg!q70.jpg.webp',
+        title: '257天最低价',
+        content: '短袖T恤男   套装  新款  韩版',
+        presentPrice: 69,
+        originalPrice: 188
+      }
+    ]
+  },
+  {
+    imageUrl: './image/18c0bf3674afc7eb.jpg!q70.jpg.webp',
+    content: '金枕头榴莲一个装3-4斤净果',
+    title: '36天最低价',
+    presentPrice: 89.9,
+    originalPrice: 138.9,
+    arr: [
+      {
+        imageUrl: './image/0ee5bec5256409ac.png!q70.jpg.webp',
+        title: '1年最低价',
+        content: '云笋新鲜竹笋尖清水笋尖500克',
+        presentPrice: 17.8,
+        originalPrice: 30
+      },
+      {
+        imageUrl: './image/f4bbbd783513354c.jpg!q70.jpg.webp',
+        title: '1年最低价',
+        content: '肉丁酱罐头',
+        presentPrice: 8.9,
+        originalPrice: 29
+      },
+      {
+        imageUrl: './image/5be54c50N7f218c61.jpg!q70.jpg.webp',
+        title: '1年最低价',
+        content: '梦龙韵福鼎白茶 寿眉坨85g',
+        presentPrice: 28.9,
+        originalPrice: 59
+      },
+      {
+        imageUrl: './image/5e313c07924f4004.jpg!q70.jpg.webp',
+        title: '82天最低价',
+        content: '新货黑加仑葡萄干500g*1袋',
+        presentPrice: 26.9,
+        originalPrice: 49.9
+      }
+    ]
+  },
+  {
+    imageUrl: './image/133b409dc8f49d0f.jpg!q70.jpg.webp',
+    content: '绿色防雨防晒篷布2米宽X2米长',
+    title: '无次数最低价',
+    presentPrice: 19.9,
+    originalPrice: 28.5,
+    arr: [
+      {
+        imageUrl: './image/6c1fbd69e466f77f.jpg!q70.jpg.webp',
+        title: '1年最低价',
+        content: '调味罐调料盒盐罐调味罐',
+        presentPrice: 12.9,
+        originalPrice: 19.9
+      },
+      {
+        imageUrl: './image/60261676c2c0c04b.jpg!q70.jpg.webp',
+        title: '143天最低价',
+        content: '樱桃树苗现挖现卖买3送1',
+        presentPrice: 16.8,
+        originalPrice: 36.8
+      },
+      {
+        imageUrl: './image/5e313c07924f4004.jpg!q70.jpg.webp',
+        title: '99天最低价',
+        content: '30件套下午茶豪华生日派对',
+        presentPrice: 21.9,
+        originalPrice: 32
+      },
+      {
+        imageUrl: './image/7719a9026ab129ba.jpg!q70.jpg.webp',
+        title: '1年最低价',
+        content: '熏香卫生间专用熏香檀香盘香熏',
+        presentPrice: 14.8,
+        originalPrice: 21.2
+      }
+    ]
+  },
+  {
+    imageUrl: './image/5cec627cae57e21f.jpg!q70.jpg.webp',
+    content: '阿迪达斯走珠香体液止汗露',
+    title: '53天最低价',
+    presentPrice: 17.8,
+    originalPrice: 32.8,
+    arr: [
+      {
+        imageUrl: './image/36c9091e759301ed.jpg!q70.jpg.webp',
+        title: '1年最低价',
+        content: '月瘦20针对顽固性肥胖',
+        presentPrice: 14.9,
+        originalPrice: 30
+      },
+      {
+        imageUrl: './image/e7379633605847c2.jpg!q70.jpg.webp',
+        title: '87天最低价',
+        content: '冬季护手霜补水保湿防干裂',
+        presentPrice: 5.8,
+        originalPrice: 8.8
+      },
+      {
+        imageUrl: './image/345d96772fed8129.jpg!q70.jpg.webp',
+        title: '340天最低价',
+        content: '老姜中药泡脚粉  6g*100',
+        presentPrice: 18,
+        originalPrice: 29
+      },
+      {
+        imageUrl: './image/680fbf035fe433a8.jpg!q70.jpg.webp',
+        title: '44天最低价',
+        content: '施华蔻 怡然染发霜 羊绒脂深棕',
+        presentPrice: 64,
+        originalPrice: 94
+      }
+    ]
+  },
+  {
+    imageUrl: './image/a4297ecaf164abc7.jpg!q70.jpg.webp',
+    content: '华为Nova6se全网通8+128G绿',
+    title: '无次数最低价',
+    presentPrice: 1558,
+    originalPrice: 2200,
+    arr: [
+      {
+        imageUrl: './image/9dc3af07b1efa160.jpg!q70.jpg.webp',
+        title: '1年最低价',
+        content: '家用办公茶盘竹制干泡台托盘',
+        presentPrice: 46,
+        originalPrice: 68
+      },
+      {
+        imageUrl: './image/57dbc2d87c404ab4.jpg!q70.jpg.webp',
+        title: '无次数最低价',
+        content: '【半价秒杀】防水电话手表',
+        presentPrice: 89,
+        originalPrice: 199
+      },
+      {
+        imageUrl: './image/33f472be496c4e6a.jpg!q70.jpg.webp',
+        title: '219天最低价',
+        content: '【京贸生活好物店】AMOO系列可撕粘毛器',
+        presentPrice: 8.9,
+        originalPrice: 9.9
+      },
+      {
+        imageUrl: './image/636997b404d4f8b5.jpg!q70.jpg.webp',
+        title: '无次数最低价',
+        content: '荣耀30S 5G手机白条12期免息',
+        presentPrice: 2289,
+        originalPrice: 3399
+      }
+    ]
+  }
 ]
