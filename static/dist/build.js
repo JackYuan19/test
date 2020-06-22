@@ -1,6 +1,8 @@
 (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
 'use strict';
 
+var _index = require('./index');
+
 exports.bottomSeckill = function () {
   (function () {
     // 拿到countdown-desc中的strong
@@ -222,7 +224,50 @@ exports.bottomWrapper = function () {
     sliderIndicatorsBtnOver();
   })();
 };
-},{}],2:[function(require,module,exports){
+exports.boxHdArrow = function () {
+  (function () {
+    // 拿到元素
+    var boxHdArrow = document.getElementsByClassName('box_hd_arrow1')[0];
+    boxHdArrow.addEventListener('mouseover', function () {
+      boxHdArrow.setAttribute('class', 'box_hd_arrow box_hd_arrow1');
+    });
+    boxHdArrow.addEventListener('mouseleave', function () {
+      boxHdArrow.removeAttribute('class');
+      boxHdArrow.setAttribute('class', 'box_hd_arrow1');
+    });
+  })();
+};
+exports.boxBottomOver = function () {
+  (function () {
+    // 拿到tab_body_item的元素
+    var tabBodyItem = document.getElementsByClassName('tab_body_item');
+    // 拿到tab_head_item的元素
+    var tabHeadItem = document.getElementsByClassName('tab_head_item');
+    var arr = [0, 1, 2, 3, 4];
+    // 处理过滤结果
+    function filterDom(index) {
+      var manyArr = (0, _index.filterArr)(arr, index);
+      manyArr.map(function (ele) {
+        tabBodyItem[ele].style.display = 'none';
+        tabHeadItem[ele].setAttribute('class', 'tab_head_item');
+      });
+      // 改变和index相等的DOM元素
+      tabHeadItem[index].setAttribute('class', 'tab_head_item active');
+      tabBodyItem[index].style.display = 'block';
+    }
+
+    var _loop = function _loop(i) {
+      tabHeadItem[i].addEventListener('mouseover', function () {
+        filterDom(i);
+      });
+    };
+
+    for (var i = 0; i < tabHeadItem.length; i++) {
+      _loop(i);
+    }
+  })();
+};
+},{"./index":4}],2:[function(require,module,exports){
 'use strict';
 
 var _index = require('./index');
@@ -588,6 +633,8 @@ var _bottom = require('./bottom');
 (0, _bottom.bottomSeckill)();
 (0, _bottom.bottomSlider)();
 (0, _bottom.bottomWrapper)();
+(0, _bottom.boxHdArrow)();
+(0, _bottom.boxBottomOver)();
 },{"./bottom":1,"./center":2,"./header":3,"./shortcut":6}],6:[function(require,module,exports){
 'use strict';
 

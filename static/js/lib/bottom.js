@@ -1,5 +1,7 @@
 'use strict';
 
+var _index = require('./index');
+
 exports.bottomSeckill = function () {
   (function () {
     // 拿到countdown-desc中的strong
@@ -219,5 +221,48 @@ exports.bottomWrapper = function () {
     }
     start();
     sliderIndicatorsBtnOver();
+  })();
+};
+exports.boxHdArrow = function () {
+  (function () {
+    // 拿到元素
+    var boxHdArrow = document.getElementsByClassName('box_hd_arrow1')[0];
+    boxHdArrow.addEventListener('mouseover', function () {
+      boxHdArrow.setAttribute('class', 'box_hd_arrow box_hd_arrow1');
+    });
+    boxHdArrow.addEventListener('mouseleave', function () {
+      boxHdArrow.removeAttribute('class');
+      boxHdArrow.setAttribute('class', 'box_hd_arrow1');
+    });
+  })();
+};
+exports.boxBottomOver = function () {
+  (function () {
+    // 拿到tab_body_item的元素
+    var tabBodyItem = document.getElementsByClassName('tab_body_item');
+    // 拿到tab_head_item的元素
+    var tabHeadItem = document.getElementsByClassName('tab_head_item');
+    var arr = [0, 1, 2, 3, 4];
+    // 处理过滤结果
+    function filterDom(index) {
+      var manyArr = (0, _index.filterArr)(arr, index);
+      manyArr.map(function (ele) {
+        tabBodyItem[ele].style.display = 'none';
+        tabHeadItem[ele].setAttribute('class', 'tab_head_item');
+      });
+      // 改变和index相等的DOM元素
+      tabHeadItem[index].setAttribute('class', 'tab_head_item active');
+      tabBodyItem[index].style.display = 'block';
+    }
+
+    var _loop = function _loop(i) {
+      tabHeadItem[i].addEventListener('mouseover', function () {
+        filterDom(i);
+      });
+    };
+
+    for (var i = 0; i < tabHeadItem.length; i++) {
+      _loop(i);
+    }
   })();
 };

@@ -1,3 +1,4 @@
+import {filterArr} from './index'
 exports.bottomSeckill = () => {
   (function(){
     // 拿到countdown-desc中的strong
@@ -215,5 +216,43 @@ exports.bottomWrapper = () => {
     }
     start();
     sliderIndicatorsBtnOver();
+  }());
+}
+exports.boxHdArrow = () => {
+ (function(){
+   // 拿到元素
+   const boxHdArrow = document.getElementsByClassName('box_hd_arrow1')[0];
+   boxHdArrow.addEventListener('mouseover',function() {
+     boxHdArrow.setAttribute('class','box_hd_arrow box_hd_arrow1');
+   });
+   boxHdArrow.addEventListener('mouseleave',function() {
+     boxHdArrow.removeAttribute('class');
+     boxHdArrow.setAttribute('class','box_hd_arrow1');
+  });
+ }())
+}
+exports.boxBottomOver = () => {
+  (function(){
+   // 拿到tab_body_item的元素
+   const tabBodyItem = document.getElementsByClassName('tab_body_item');
+   // 拿到tab_head_item的元素
+   const tabHeadItem = document.getElementsByClassName('tab_head_item');
+   const arr = [0,1,2,3,4]; 
+   // 处理过滤结果
+   function filterDom(index) {
+     let manyArr = filterArr(arr,index);
+     manyArr.map(ele => {
+      tabBodyItem[ele].style.display = 'none';
+      tabHeadItem[ele].setAttribute('class','tab_head_item');
+     });
+     // 改变和index相等的DOM元素
+     tabHeadItem[index].setAttribute('class','tab_head_item active');
+     tabBodyItem[index].style.display = 'block';
+   }
+   for(let i = 0; i < tabHeadItem.length; i++) {
+     tabHeadItem[i].addEventListener('mouseover',function() {
+       filterDom(i);
+     });
+   }
   }());
 }

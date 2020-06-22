@@ -17,3 +17,5 @@ var _bottom = require('./bottom');
 (0, _bottom.bottomSeckill)();
 (0, _bottom.bottomSlider)();
 (0, _bottom.bottomWrapper)();
+(0, _bottom.boxHdArrow)();
+(0, _bottom.boxBottomOver)();
