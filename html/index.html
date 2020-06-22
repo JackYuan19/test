@@ -1031,6 +1031,174 @@
             </div>
           </div>
         </div>
+        <div id="J_spec">
+          <div id="J_core1" class="core1 jd_container floor" >
+            <div class="grid_c1 core1_inner">
+              <div id="J_special_offer" class="box special_offer grid_c2">
+                <div class="box_hd">
+                  <a href="javascript:void(0);" class="box_hd_lk">
+                    <h3 class="box_tit">每日特价</h3>
+                    <i class="box_hd_arrow1"></i>
+                  </a>
+                </div>
+                <div class="box_bd">
+                  <div class="special_inner">
+                    <div class="tab special_tab">
+                       <div class="tab_head">
+                        <div class="tab_head_item active">
+                           <a href="javascript:void(0);" class="special_tab_lk">
+                              精选
+                           </a>
+                        </div>
+                        <div class="tab_head_item">
+                           <a href="javascript:void(0);" class="special_tab_lk">
+                              美食
+                           </a>
+                        </div>
+                        <div class="tab_head_item">
+                           <a href="javascript:void(0);" class="special_tab_lk">
+                             百货
+                           </a>
+                        </div>
+                        <div class="tab_head_item">
+                           <a href="javascript:void(0);" class="special_tab_lk">
+                             个护
+                           </a>
+                        </div>
+                        <div class="tab_head_item">
+                           <a href="javascript:void(0);" class="special_tab_lk">
+                             预告
+                           </a>
+                        </div>
+                       </div>
+                       <div class="tab_body">
+                         {{each boxImage value index}}
+                         <div class="tab_body_item">
+                           <div class="special_list">
+                             <div class="special_item special_item_0">
+                               <a href="javascript:void(0);" class="special_item_lk">
+                                 <div class="lazyimg lazyimg_loaded special_item_img">
+                                    <img src="{{value.imageUrl}}">
+                                 </div>
+                                 <div class="special_item_lowestFirst">{{value.title}}</div>
+                                 <div class="special_item_message">
+                                    <span class="special_item_name">{{value.content}}</span>
+                                    <div class="special_item_price">
+                                      <span class="special_item_miaoShaPrice">
+                                         <span class="dollar_txt">￥</span>
+                                        {{value.presentPrice}}
+                                      </span>
+                                      <span class="special_item_jdPrice">
+                                        <span class="dollar_txt">￥</span>
+                                       {{value.originalPrice}}
+                                      </span>
+                                    </div>
+                                 </div>
+                               </a>
+                             </div>
+                             <div class="special_item special_item_1">
+                               <a href="javascript:void(0);" class="special_item_lk">
+                                 <div class="lazyimg lazyimg_loaded special_item_img">
+                                   <img src="{{value.arr[0].imageUrl}}" class="lazyimg_img">
+                                 </div>
+                                 <span class="special_item_lowest">{{value.arr[0].title}}</span>
+                                 <div class="special_item_message">
+                                    <span class="special_item_name">
+                                       {{value.arr[0].content}}
+                                    </span>
+                                   <div class="special_item_price">
+                                     <span class="special_item_miaoShaPrice">
+                                        <span class="dollar_txt">￥</span>
+                                        {{value.arr[0].presentPrice}}
+                                     </span>
+                                     <span class="special_item_jdPrice">
+                                        <span class="dollar_txt">￥</span>
+                                        {{value.arr[0].originalPrice}}
+                                     </span>
+                                   </div>
+                                 </div>
+                               </a>
+                             </div>
+                             <div class="special_item special_item_2">
+                              <a href="javascript:void(0);" class="special_item_lk">
+                                <div class="lazyimg lazyimg_loaded special_item_img">
+                                  <img src="{{value.arr[1].imageUrl}}" class="lazyimg_img">
+                                </div>
+                                <span class="special_item_lowest">{{value.arr[1].title}}</span>
+                                <div class="special_item_message">
+                                   <span class="special_item_name">
+                                      {{value.arr[1].content}}
+                                   </span>
+                                  <div class="special_item_price">
+                                    <span class="special_item_miaoShaPrice">
+                                       <span class="dollar_txt">￥</span>
+                                       {{value.arr[1].presentPrice}}
+                                    </span>
+                                    <span class="special_item_jdPrice">
+                                       <span class="dollar_txt">￥</span>
+                                       {{value.arr[1].originalPrice}}
+                                    </span>
+                                  </div>
+                                </div>
+                              </a>
+                             </div>
+                             <div class="special_item special_item_3">
+                              <a href="javascript:void(0);" class="special_item_lk">
+                                <div class="lazyimg lazyimg_loaded special_item_img">
+                                  <img src="{{value.arr[2].imageUrl}}" class="lazyimg_img">
+                                </div>
+                                <span class="special_item_lowest">{{value.arr[2].title}}</span>
+                                <div class="special_item_message">
+                                   <span class="special_item_name">
+                                    {{value.arr[2].content}}
+                                   </span>
+                                  <div class="special_item_price">
+                                    <span class="special_item_miaoShaPrice">
+                                       <span class="dollar_txt">￥</span>
+                                       {{value.arr[2].presentPrice}}
+                                    </span>
+                                    <span class="special_item_jdPrice">
+                                       <span class="dollar_txt">￥</span>
+                                       {{value.arr[2].originalPrice}}
+                                    </span>
+                                  </div>
+                                </div>
+                              </a>
+                             </div>
+                             <div class="special_item special_item_4">
+                              <a href="javascript:void(0);" class="special_item_lk">
+                                <div class="lazyimg lazyimg_loaded special_item_img">
+                                  <img src="{{value.arr[3].imageUrl}}" class="lazyimg_img">
+                                </div>
+                                <span class="special_item_lowest">{{value.arr[3].title}}</span>
+                                <div class="special_item_message">
+                                   <span class="special_item_name">
+                                    {{value.arr[3].content}}
+                                   </span>
+                                  <div class="special_item_price">
+                                    <span class="special_item_miaoShaPrice">
+                                       <span class="dollar_txt">￥</span>
+                                       {{value.arr[3].presentPrice}}
+                                    </span>
+                                    <span class="special_item_jdPrice">
+                                       <span class="dollar_txt">￥</span>
+                                       {{value.arr[3].originalPrice}}
+                                    </span>
+                                  </div>
+                                </div>
+                              </a>
+                             </div>
+                           </div>
+                         </div>
+                         {{/each}}
+                       </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <script src="/dist/build.js"></script>
