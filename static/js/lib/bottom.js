@@ -226,14 +226,15 @@ exports.bottomWrapper = function () {
 exports.boxHdArrow = function () {
   (function () {
     // 拿到元素
-    var boxHdArrow = document.getElementsByClassName('box_hd_arrow1')[0];
-    boxHdArrow.addEventListener('mouseover', function () {
-      boxHdArrow.setAttribute('class', 'box_hd_arrow box_hd_arrow1');
-    });
-    boxHdArrow.addEventListener('mouseleave', function () {
-      boxHdArrow.removeAttribute('class');
-      boxHdArrow.setAttribute('class', 'box_hd_arrow1');
-    });
+    var boxHdArrow = document.getElementsByClassName('box_hd_arrow1');
+    for (var i = 0; i < boxHdArrow.length; i++) {
+      boxHdArrow[i].addEventListener('mouseover', function () {
+        this.setAttribute('class', 'box_hd_arrow1 box_hd_arrow');
+      });
+      boxHdArrow[i].addEventListener('mouseleave', function () {
+        this.setAttribute('class', 'box_hd_arrow1');
+      });
+    }
   })();
 };
 exports.boxBottomOver = function () {
@@ -264,5 +265,112 @@ exports.boxBottomOver = function () {
     for (var i = 0; i < tabHeadItem.length; i++) {
       _loop(i);
     }
+  })();
+};
+
+exports.logoHover = function () {
+  (function () {
+    // 拿到元素
+    var logoTextChildren = document.getElementsByClassName('logo-text')[0].children[0];
+    // 拿到元素
+    var scrollPoints = document.getElementsByClassName('scroll-points')[0];
+    var goodsList = document.getElementsByClassName('goods-list')[0];
+    var niceGoodsNiceRecommends = document.getElementsByClassName('nice-goods__recommends')[0];
+    var scrollBar = document.getElementsByClassName('scroll-bar')[0];
+    var speed = 0,
+        sliderSpeed = 0,
+        timer = void 0;
+    // 拿到nice-goods__logo
+    var niceGoodsLogo = document.getElementsByClassName('nice-goods__logo')[0];
+    function mouseOver() {
+      niceGoodsLogo.addEventListener('mouseover', function () {
+        logoTextChildren.setAttribute('class', 'logo-text_show');
+        scrollBar.style.opacity = 1;
+        clearInterval(timer);
+      });
+      niceGoodsLogo.addEventListener('mouseleave', function () {
+        logoTextChildren.removeAttribute('class');
+        scrollBar.style.opacity = 0;
+        clearInterval(timer);
+        slider();
+      });
+    }
+    function slider() {
+      timer = setInterval(function () {
+        if (speed < -1020 || sliderSpeed > 860) {
+          speed = 0;
+          sliderSpeed = 0;
+          goodsList.style.transform = 'translate3d(' + speed + 'px,0,0)';
+          scrollPoints.style.left = sliderSpeed + 'px';
+        } else {
+          speed += -20.4;
+          sliderSpeed += 17.2;
+          goodsList.style.transform = 'translate3d(' + speed + 'px,0,0)';
+          scrollPoints.style.left = sliderSpeed + 'px';
+        }
+      }, 1000);
+    }
+    function sliderMove() {
+      scrollPoints.addEventListener('mousedown', function (event) {
+        var _this = this;
+
+        var e = event || window.event;
+        var offset = e.clientX - this.offsetLeft;
+        document.onmousemove = function (event) {
+          clearTimeout(timer);
+          var e = event || window.event;
+          var x = e.clientX - offset;
+          if (x <= 0) {
+            sliderSpeed = 0, speed = 0;
+            _this.style.left = 0 + 'px';
+            goodsList.style.transform = 'translate3d(0px,0,0)';
+            return;
+          } else if (x >= 861) {
+            sliderSpeed = 861, speed = -1020;
+            _this.style.left = 861 + 'px';
+            goodsList.style.transform = 'translate3d(-1020px,0,0)';
+            return;
+          } else {
+            if (x > sliderSpeed) {
+              //  代表是往右边走的
+              sliderSpeed = x;
+              //console.log(speed);
+              speed -= 28 * 0.1;
+              goodsList.style.transform = 'translate3d(' + speed + 'px,0,0)';
+            } else {
+              // 代表往左边走到
+              sliderSpeed = x;
+              speed += 25 * 0.1;
+              goodsList.style.transform = 'translate3d(' + speed + 'px,0,0)';
+            }
+            _this.style.left = x + 'px';
+          }
+        };
+        document.onmouseup = function () {
+          this.onmousemove = null;
+          clearTimeout(timer);
+          slider;
+        };
+      });
+    }
+    function niceMove() {
+      niceGoodsNiceRecommends.addEventListener('mouseover', function () {
+        // 显示scrollBar
+        scrollBar.style.opacity = 1;
+        // 停止定时器
+        clearInterval(timer);
+      });
+      niceGoodsNiceRecommends.addEventListener('mouseleave', function () {
+        // 显示scrollBar
+        scrollBar.style.opacity = 0;
+        // 停止定时器
+        clearInterval(timer);
+        slider();
+      });
+    }
+    mouseOver();
+    slider();
+    sliderMove();
+    niceMove();
   })();
 };

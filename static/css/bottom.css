@@ -325,7 +325,6 @@
   height: 340px;
   margin-top: 20px;
   margin-bottom: 20px;
-  background: red;
 }
 .box {
   float: left;
@@ -571,4 +570,305 @@
 }
 .dollar_txt {
   font-size: 12px;
+}
+/*右边box样式*/
+.box_last {
+  margin-right: 0;
+}
+.lightning-buy {
+  background: white;
+  width: 590px;
+}
+.lightning-buy__container {
+  padding: 0 20px 0 15px;
+}
+.lightning-buy__container .goods-core {
+  width: 270px;
+  height: 265px;
+  margin-right: 15px;
+  display: block;
+  float: left;
+  background: rgba(100, 126, 146, 0.05);
+}
+.lightning-buy__container .goods-core .core-logo {
+  position: relative;
+  width: 70px;
+  height: 35px;
+  display: block;
+  margin: 15px auto 0;
+  z-index: 1;
+}
+.lightning-buy__container .goods-core .core-name {
+  position: relative;
+  color: #333;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  z-index: 1;
+  margin-top: 6px;
+}
+.lightning-buy__container .goods-core .core-desc {
+  position: relative;
+  text-align: center;
+  font-size: 12px;
+  color: #666;
+  margin: 1px 0 13px 0;
+  z-index: 1;
+}
+.lightning-buy__container .goods-core .core-desc__promo {
+  padding-right: 5px;
+  position: relative;
+}
+.lightning-buy__container .goods-core .core-desc__extra {
+  padding-left: 5px;
+  position: relative;
+}
+.lightning-buy__container .goods-core .core-desc__extra:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 1px;
+  height: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(102, 102, 102, 0.4);
+}
+.lightning-buy__container .goods-core .core-desc__extra .extra-text {
+  margin-left: 4px;
+}
+.lightning-buy__container .goods-core .core-desc__extra .extra-day {
+  display: inline-block;
+}
+.lightning-buy__container .goods-core .core-goods {
+  width: 130px;
+  height: 130px;
+  display: block;
+  margin: 0 auto;
+  transition: opacity 0.2s ease;
+  position: relative;
+}
+.lightning-buy__container .goods-core {
+  position: relative;
+}
+.lightning-buy__container .goods-others {
+  width: 270px;
+  display: block;
+  float: left;
+  vertical-align: top;
+  margin-top: -40px;
+}
+.lightning-buy__container .goods-others .other-item {
+  display: block;
+  width: 135px;
+  float: left;
+  height: 100px;
+  padding: 14px 0;
+  box-sizing: border-box;
+}
+.lightning-buy__container .goods-others .other-item:nth-child(odd):after {
+  position: absolute;
+  width: 1px;
+  height: 60px;
+  right: 0;
+  top: 50%;
+  margin-top: -30px;
+  background: linear-gradient(180deg, white, #eeeeee, #eeeeee, white);
+  content: "";
+}
+.lightning-buy__container .goods-others .other-item {
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+.lightning-buy__container .goods-others .other-item__logo {
+  width: 100px;
+  height: 50px;
+  margin: 0 auto;
+  position: relative;
+}
+.lightning-buy__container .goods-others .other-item__logo img {
+  width: 100%;
+  height: 100%;
+}
+.lightning-buy__container .goods-others .other-item__logo .logo-overlap {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(245, 245, 245, 0.95);
+  text-align: center;
+  transition: opacity 0.2s ease;
+  font-weight: 700;
+  color: #333;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 10px;
+  visibility: hidden;
+}
+.lightning-buy__container .goods-others .other-item__logo .logo-overlap span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  vertical-align: middle;
+  word-break: break-all;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  box-sizing: border-box;
+  padding: 0 12px;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+.lightning-buy__container .goods-others .other-item__name {
+  color: #333;
+  margin-top: 6px;
+  font-size: 12px;
+  text-align: center;
+  font-weight: 400;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/*J_niceGoods的样式*/
+#J_niceGoods {
+  outline: none;
+}
+.nice-goods {
+  height: 260px;
+  position: relative;
+  box-sizing: border-box;
+  padding-left: 190px;
+  margin-bottom: 20px;
+}
+.nice-goods .logo-container {
+  width: 160px;
+  height: 90px;
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url("/image/下載 (2).png");
+  background-size: contain;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+.nice-goods .logo-container .logo-text {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 16px;
+  padding: 55px 0px 10px 20px;
+  display: block;
+  position: relative;
+}
+.nice-goods .logo-container .logo-text i {
+  background-image: url("/image/sprite (1).png");
+  background-position: 0 -16px;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  margin-left: 6px;
+  margin-top: -2px;
+  vertical-align: middle;
+  display: inline-block;
+}
+.nice-goods .logo-container .logo-text .logo-text_show {
+  background-image: url("/image/sprite (1).png");
+  background-position: 0 0;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 61px;
+  left: 102px;
+}
+.nice-goods__logo {
+  background-color: #eee;
+  background-size: 100%;
+}
+.nice-goods__logo--bg-5 {
+  background-image: url('/image/c78710f134c8845d365aa5028230db9f.png');
+}
+.nice-goods__logo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 190px;
+  height: 100%;
+}
+.nice-goods__recommends {
+  margin-left: 10px;
+  height: 100%;
+  position: relative;
+}
+.nice-goods__recommends .goods-list {
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 100%;
+  width: 2100px;
+  box-sizing: border-box;
+  white-space: normal;
+}
+.nice-goods__recommends .goods-list .goods {
+  width: 150px;
+  display: inline-block;
+  margin-right: 50px;
+  vertical-align: top;
+}
+.nice-goods__recommends .goods-list .goods--bottom {
+  margin-top: 50px;
+}
+.nice-goods__recommends .goods-list .goods--bottom .goods__name {
+  margin-bottom: 10px;
+}
+.nice-goods__recommends .goods-list .goods--top {
+  margin-top: 20px;
+}
+.nice-goods__recommends .goods-list .goods--top .goods__name {
+  margin-top: 10px;
+}
+.nice-goods__recommends .goods-list .goods__name {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #333;
+  transition: color 0.2s ease;
+  text-align: center;
+  font-size: 14px;
+}
+.nice-goods__recommends .goods-list .goods__name:hover {
+  color: #e1251b;
+}
+.nice-goods__recommends .goods-list .goods__image {
+  height: 150px;
+}
+.nice-goods__recommends .goods-list .goods__image img {
+  width: 100%;
+  height: 100%;
+}
+.nice-goods__recommends .goods-list .goods__image {
+  transition: opacity 0.2s ease;
+}
+.nice-goods__recommends .scroll-bar {
+  position: absolute;
+  left: 15px;
+  bottom: 10px;
+  width: calc(100% - 30px);
+  height: 3px;
+  border-radius: 3px;
+  background-color: #f3f3f3;
+  opacity: 0;
+  transition: opacity 0.2s ease 0s;
+}
+.nice-goods__recommends .scroll-bar .scroll-points {
+  width: 33px;
+  height: 9px;
+  border-radius: 4px;
+  background-color: #d8d8d8;
+  position: absolute;
+  top: 50%;
+  margin-top: -4.5px;
+}
+.nice-goods__recommends {
+  background-color: white;
+  overflow: hidden;
 }

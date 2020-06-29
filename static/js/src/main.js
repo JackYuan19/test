@@ -1,7 +1,7 @@
 import {shortcutLeft} from './shortcut'
 import {searchRandom,navBtnRandom} from './header'
 import {middleNavImage,middleNavRight,middleRight} from './center'
-import {bottomSeckill,bottomSlider,bottomWrapper,boxHdArrow,boxBottomOver} from './bottom'
+import {bottomSeckill,bottomSlider,bottomWrapper,boxHdArrow,boxBottomOver,logoHover} from './bottom'
 shortcutLeft();
 searchRandom();
 navBtnRandom();
@@ -13,3 +13,4 @@ bottomSlider();
 bottomWrapper();
 boxHdArrow();
 boxBottomOver();
+logoHover();

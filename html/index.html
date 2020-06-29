@@ -13,7 +13,7 @@
     <!--引入底层样式-->
     <link rel="stylesheet" type="text/css" href="/css/bottom.css">
 </head>
-<body>
+<body id="Move">
     <div class="mod_container">
        <!--顶部导航栏-->
        <div class="shortcut">
@@ -1196,6 +1196,138 @@
                   </div>
                 </div>
               </div>
+              <div id="J_lightning_buy" class="box lightning-buy grid_c2 box_last">
+                <div class="box_hd">
+                  <a class="box_hd_lk" href="javascript:void(0);">
+                    <h2 class="box_tit">品牌闪购</h2>
+                    <i class="box_hd_arrow1"></i>
+                  </a>
+                </div>
+                <div class="box_bd">
+                  <div class="lightning-buy__container">
+                    {{each imageUrl3 list index}}
+                    <a href="javascript:void(0)" class="goods-core goods-core__8">
+                     <img class="core-logo" src="{{list.imageUrl}}">
+                     <h6 class="core-name">{{list.title}}</h6>
+                     <div class="core-desc">
+                       <span class="core-desc__promo">{{list.content}}</span>
+                       <span class="core-desc__extra">
+                          <span class="extra-text">仅剩</span>
+                          <div class="extra-day">
+                             <span>{{list.day}}</span>
+                             天
+                          </div>
+                       </span>
+                     </div>
+                     <img class="core-goods" src="{{list.imageUrl1}}">
+                    </a>
+                    <div class="goods-others">
+                    {{each list.arr value index}}
+                     <a href="javascript:void(0);" class="other-item">
+                       <div class="other-item__logo">
+                         <img src="{{value.imageUrl}}">
+                         <div class="logo-overlap">
+                            <span>{{value.title}}</span>
+                         </div>
+                         <h6 class="other-item__name">{{value.content}}</h6>
+                       </div>
+                     </a> 
+                    {{/each}}
+                    </div>
+                    {{/each}}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="J_niceGoods" tabindex="0">
+            <div class="jd_container nice-goods">
+               <a href="javascript:void(0);" class="nice-goods__logo nice-goods__logo--bg-5">
+                 <div class="logo-container">
+                    <div class="logo-text">
+                     探索新生活
+                     <i></i>
+                    </div>
+                 </div>
+               </a>
+               <div class="nice-goods__recommends">
+                  <div class="goods-list" style="transform: translate3d(0px,0,0);">
+                    <a class="goods goods--bottom" href="javascript:void(0);">
+                     <div class="goods__name">英睿达 大容量 固态硬盘</div>
+                     <div class="goods__image">
+                        <img src="/image/5cd81854Nf79f5564.jpg!q70.jpg.webp">
+                     </div>
+                    </a>
+                    <a class="goods goods--top" href="javascript:void(0);">
+                     <div class="goods__image">
+                        <img src="/image/629dd431b7b01f1a.jpg!q70.jpg.webp">
+                     </div>
+                     <div class="goods__name">
+                        PILOT 进口 钢笔套盒
+                     </div>
+                    </a>
+                    <a class="goods goods--bottom" href="javascript:void(0);">
+                     <div class="goods__name">华硕 WiFi6双频 智能路由器</div>
+                     <div class="goods__image">
+                        <img src="/image/be871198168d3659.png.webp">
+                     </div>
+                    </a>
+                    <a class="goods goods--top" href="javascript:void(0);">
+                     <div class="goods__image">
+                        <img src="/image/5fbf285014b25d14.jpg!q70.jpg.webp">
+                     </div>
+                     <div class="goods__name">
+                        联想 高清全面屏 办公笔记本
+                     </div>
+                    </a>
+                    <a class="goods goods--bottom" href="javascript:void(0);">
+                     <div class="goods__name">百乐 EF尖 钢笔</div>
+                     <div class="goods__image">
+                        <img src="/image/bc33883027bb41c4.jpg!q70.jpg.webp">
+                     </div>
+                    </a>
+                    <a class="goods goods--top" href="javascript:void(0);">
+                     <div class="goods__image">
+                        <img src="/image/5a607717N10450a0c.jpg!q70.jpg.webp">
+                     </div>
+                     <div class="goods__name">
+                        可悠然 深层清洁 沐浴露
+                     </div>
+                    </a>
+                    <a class="goods goods--bottom" href="javascript:void(0);">
+                     <div class="goods__name">H3C 8口千兆 交换机</div>
+                     <div class="goods__image">
+                        <img src="/image/338df44a3498a746.jpg!q70.jpg.webp">
+                     </div>
+                    </a>
+                    <a class="goods goods--top" href="javascript:void(0);">
+                     <div class="goods__image">
+                        <img src="/image/a371a55f182ea23d.jpg!q70.jpg.webp">
+                     </div>
+                     <div class="goods__name">
+                        施耐德 可换芯 签字笔
+                     </div>
+                    </a>
+                    <a class="goods goods--bottom" href="javascript:void(0);">
+                     <div class="goods__name">Apple指纹识别平板</div>
+                     <div class="goods__image">
+                        <img src="/image/5a9eb7b7N378944ce.jpg!q70.jpg.webp">
+                     </div>
+                    </a>
+                    <a class="goods goods--top" href="javascript:void(0);">
+                     <div class="goods__image">
+                        <img src="/image/58f57ba5Nc61a4abe.jpg!q70.jpg.webp">
+                     </div>
+                     <div class="goods__name">
+                        索尼专业级微单相机
+                     </div>
+                    </a>
+                  </div>
+                  <div class="scroll-bar">
+                     <span class="scroll-points" style="left: 0px;width:99px;">
+                     </span>
+                  </div>
+               </div>
             </div>
           </div>
         </div>
