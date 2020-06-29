@@ -365,4 +365,46 @@ exports.imageUrl2 = [
       }
     ]
   }
+];
+
+exports.imageUrl3 = [
+  {
+    imageUrl: '/image/50fcf101004bc360.png!cc_70x35.webp',
+    title: '灯饰大牌闪购特惠',
+    content: '部分商品满199减100',
+    day: 2,
+    imageUrl1: '/image/e2821224803d67f1.jpg!cc_130x130.webp',
+    arr: [
+      {
+        imageUrl: '/image/0094201f5c478752.png!cc_300x150.webp',
+        title: '白条三期免息',
+        content: '电脑配件品牌闪购'
+      },
+      {
+        imageUrl: '/image/7a16d73245646f65.png!cc_300x150.webp',
+        title: '部分低至满199减80元',
+        content: '进口母婴用品大赏'
+      },
+      {
+        imageUrl: '/image/b266af9904b2e82b.png!cc_300x150.webp',
+        title: '低至3折',
+        content: '奢品钜惠专场'
+      },
+      {
+        imageUrl: '/image/30b7c7d6e3c55b69.png!cc_300x150.webp',
+        title: '爆款限时低价抢',
+        content: '轻奢腕表闪购专场'
+      },
+      {
+        imageUrl: '/image/f9ad633fd26d2839.png!cc_300x150.webp',
+        title: '低至6.9元',
+        content: '端午钜惠尽在母婴'
+      },
+      {
+        imageUrl: '/image/1ee76bfaed44e93a.png!cc_300x150.webp',
+        title: '爆款直降 低至5折',
+        content: '大牌玩具闪购专场'
+      }
+    ]
+  }
 ]
