@@ -1330,6 +1330,123 @@
                </div>
             </div>
           </div>
+          <div id="J_core2" class="core2 jd_container floor">
+            <div id="J_newArrival" class="box newArrival">
+               <div class="box_hd">
+                 <a href="javascript:void(0);" class="box_hd_lk">
+                   <h3 class="box_tit">新品首发</h3>
+                   <i class="box_hd_arrow1"></i> 
+                 </a> 
+               </div>
+               <div class="box_bd" style="overflow: hidden">
+                 <div class="slider newArrival_slider">
+                   <button class="slider_control slider_control_prev"><</button>
+                   <div class="slider_list" style="overflow: initial">
+                     <div class="slider_wrapper" style="opacity: 1; position:relative;left:-65px;width: 1300px;
+                          transform: translate3d(0px,0,0); transition: transform 500ms ease-in-out 0s">
+                         {{each imageUrl4 list index}}
+                         <div class="slider_item newArrival_item" style="width: 130px; float: left;">
+                          <a class="newArrival_item_lk" href="javascript: void(0);">
+                           <div class="lazyimg lazyimg_loaded newArrival_item_img">
+                             <img src="{{list.imageUrl}}" class="lazyimg_img">
+                           </div>
+                           <div class="newArrival_item_msg">
+                             <p class="newArrival_item_name">
+                              {{list.title}}
+                             </p>
+                             <p class="newArrival_item_desc">
+                              {{list.content}}
+                             </p>
+                             <p class="newArrival_item_price">
+                               <span class="dollar_txt">￥</span>
+                               {{list.price}}
+                               <span style="font-size: 16px;">起</span>
+                             </p>
+                             <div class="newArrival_item_new">NEW</div>
+                           </div>
+                          </a>
+                         </div>
+                         {{/each}}
+                     </div>
+                   </div>
+                   <button class="slider_control slider_control_next">></button>
+                 </div>
+               </div> 
+            </div>
+            <div id="J_top" class="box new_top">
+               <div class="box_hd">
+                  <a href="javascript:void(0);" class="box_hd_lk">
+                    <h3 class="box_tit">排行榜</h3>
+                    <i class="box_hd_arrow1"></i> 
+                  </a> 
+               </div>
+               <div class="box_bd">
+                 <div class="top_inner">
+                   <div class="tab top_tab">
+                     <div class="tab_head">
+                       {{each dataTitle list index}}
+                       <div class="tab_head_item1">
+                           <a href="javascript:void(0);" class="top_tab_lk">
+                           {{list}}
+                           </a>
+                       </div>
+                       {{/each}}
+                     </div>
+                     <div class="tab_body">
+                        {{each imageUrl5 list index}}
+                        <div class="tab_body_item1">
+                           <div class="new_top_list">
+                             <div class="top_item new_top_item_1">
+                               <a href="javascript:void(0);" class="top_item_lk">
+                                 <div class="lazyimg lazyimg_loaded top_item_img">
+                                    <img src="{{list.arr[0].imageUrl}}">
+                                 </div>
+                                 <div class="top_item_rank top_item_rank_1">
+                                    <span class="top_item_rank_top">TOP</span>
+                                    <span class="top_item_rank_num">
+                                       01
+                                    </span>
+                                 </div>
+                                 <span class="top_item_name">{{list.arr[0].title}}</span>
+                               </a>
+                             </div>
+                             <div class="top_item new_top_item_2">
+                                <a href="javascript:void(0);" class="top_item_lk">
+                                  <div class="lazyimg lazyimg_loaded top_item_img">
+                                     <img src="{{list.arr[1].imageUrl}}">
+                                  </div>
+                                  <div class="top_item_rank top_item_rank_2">
+                                     <span class="top_item_rank_top">TOP</span>
+                                     <span class="top_item_rank_num">
+                                        02
+                                     </span>
+                                  </div>
+                                  <span class="top_item_name">{{list.arr[1].title}}</span>
+                                </a>
+                             </div>
+                             <div class="top_item new_top_item_3">
+                                <a href="javascript:void(0);" class="top_item_lk">
+                                  <div class="lazyimg lazyimg_loaded top_item_img">
+                                     <img src="{{list.arr[2].imageUrl}}">
+                                  </div>
+                                  <div class="top_item_rank top_item_rank_3">
+                                     <span class="top_item_rank_top">TOP</span>
+                                     <span class="top_item_rank_num">
+                                        03
+                                     </span>
+                                  </div>
+                                  <span class="top_item_name">{{list.arr[2].title}}</span>
+                                </a>
+                             </div>
+                           </div>
+                         </div>
+                        {{/each}}
+                     </div>
+                   </div>
+                 </div>
+               </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
