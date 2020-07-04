@@ -375,6 +375,179 @@ exports.logoHover = function () {
     niceMove();
   })();
 };
+
+exports.newArrival = function () {
+  (function () {
+    // 拿到newArrival_item_msg
+    var newArrivalItemMsg = document.getElementsByClassName('newArrival_item_msg');
+    // 拿到newArrival_item_name
+    var newArrivalItemName = document.getElementsByClassName('newArrival_item_name');
+    // 拿到newArrival_item_desc
+    var newArrivalItemDesc = document.getElementsByClassName('newArrival_item_desc');
+    // 拿到newArrival_item
+    var newArrivalItem = document.getElementsByClassName('newArrival_item');
+    // 拿到wrapper
+    var wrapper = document.getElementsByClassName('slider_wrapper')[4];
+    // 拿到左侧button按钮和右侧button按钮
+    var sliderControlPrev = document.getElementsByClassName('slider_control_prev')[3];
+    var sliderControlNext = document.getElementsByClassName('slider_control_next')[3];
+    var timer = null,
+        speed = 0,
+        value = 1,
+        arr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+    // 定义一个记录
+    // 初始值
+    function inittializeValue() {
+      newArrivalItem[1].setAttribute('class', 'slider_item newArrival_item slider_active middleSlide');
+      newArrivalItemMsg[1].setAttribute('class', 'newArrival_item_msg newArrival_item_msgActive');
+      newArrivalItemDesc[1].setAttribute('class', 'newArrival_item_desc newArrival_item_descActive');
+      newArrivalItemName[1].setAttribute('class', 'newArrival_item_name newArrival_item_nameActive');
+    }
+    // 开启定时器
+    function sliderSpeed(speed, index) {
+      var toArr = (0, _index.filterArr)(arr, index);
+      toArr.map(function (ele) {
+        // 更改和index不相关的标签
+        newArrivalItem[ele].setAttribute('class', 'slider_item newArrival_item');
+        newArrivalItemMsg[ele].setAttribute('class', 'newArrival_item_msg');
+        newArrivalItemDesc[ele].setAttribute('class', 'newArrival_item_desc');
+        newArrivalItemName[ele].setAttribute('class', 'newArrival_item_name ');
+      });
+      // 改变transition
+
+      // 设置和index相关的样式
+      newArrivalItem[index].setAttribute('class', 'slider_item newArrival_item slider_active middleSlide');
+      wrapper.style.transform = 'translate3d(' + speed + 'px,0,0)';
+      newArrivalItemMsg[index].setAttribute('class', 'newArrival_item_msg newArrival_item_msgActive');
+      newArrivalItemDesc[index].setAttribute('class', 'newArrival_item_desc newArrival_item_descActive');
+      newArrivalItemName[index].setAttribute('class', 'newArrival_item_name newArrival_item_nameActive');
+    }
+    function setSlider() {
+      // 开启定时器
+      timer = setInterval(function () {
+        // 判断边界值
+        if (speed === -910) {
+          speed = 0;
+          value = 1;
+          // 移动transition
+          wrapper.style.transition = 'none 0s ease 0s';
+        } else {
+          speed += -130;
+          value += 1;
+          // 移动transition
+          wrapper.style.transition = 'transform 500ms ease-in-out 0s';
+          setTimeout(function () {
+            wrapper.style.transition = 'none 0s ease 0s';
+          }, 500);
+        }
+        sliderSpeed(speed, value);
+      }, 3000);
+    }
+    function setClick() {
+      //sliderControlPrev给左侧按钮添加点击事件
+      sliderControlPrev.onclick = function (event) {
+        // 阻止默认事件
+        event.stopPropagation();
+        // 停止定时器
+        clearInterval(timer);
+        // 判断一次speed的边界值
+        if (speed >= 0) {
+          speed = -390;
+          value = 4;
+          // 移动transition
+          wrapper.style.transition = 'none 0s ease 0s';
+        } else {
+          speed += 130;
+          value -= 1;
+          // 移动transition
+          wrapper.style.transition = 'transform 500ms ease-in-out 0s';
+        }
+        // 调用方法
+        sliderSpeed(speed, value);
+        // 通过setTimeout来开启定时器
+        setTimeout(function () {
+          clearInterval(timer);
+          // 移动transition
+          wrapper.style.transition = 'none 0s ease 0s';
+          setSlider();
+        }, 2000);
+      };
+      // 给右侧添加点击事件
+      sliderControlNext.onclick = function (event) {
+        // 阻止默认事件
+        event.stopPropagation();
+        // 停止定时器
+        clearInterval(timer);
+        // 让speed减减,value+= 1;
+        // 判断speed的边界值
+        if (speed <= -910) {
+          speed = 0;
+          value = 1;
+          // 移动transition
+          wrapper.style.transition = 'none 0s ease 0s';
+        } else {
+          speed -= 130;
+          value += 1;
+          // 移动transition
+          wrapper.style.transition = 'transform 500ms ease-in-out 0s';
+        }
+        // 调用方法
+        sliderSpeed(speed, value);
+        // 通过setTimeout来开启定时器
+        setTimeout(function () {
+          clearInterval(timer);
+          // 移动transition
+          wrapper.style.transition = 'none 0s ease 0s';
+          setSlider();
+        }, 2000);
+      };
+    }
+    inittializeValue();
+    setSlider();
+    setClick();
+  })();
+};
+
+exports.newTopInner = function () {
+  (function () {
+    // 难道元素tab_head[1]中在子元素
+    var tabHeadItem = document.getElementsByClassName('tab_head')[1].children;
+    // 拿到tab_body_item1中的元素
+    var tabBodyItem = document.getElementsByClassName('tab_body_item1');
+    // 数组
+    var arr = [0, 1, 2, 3];
+    // 设置初始值
+    function inittialize() {
+      // 设置tabHeadItem中的数组0的class
+      tabHeadItem[0].setAttribute('class', 'tab_head_item1 active');
+    }
+    // 写一个方法,来实现tabBodyItem移入事件
+    function tabBodyClick() {
+      var _loop2 = function _loop2(i) {
+        tabHeadItem[i].addEventListener('mouseover', function () {
+
+          // 通过直接域中i来改变和arr不相干值
+
+          var toArr = (0, _index.filterArr)(arr, i);
+          toArr.map(function (ele) {
+            tabHeadItem[ele].setAttribute('class', 'tab_head_item1');
+            tabBodyItem[ele].style.display = 'none';
+          });
+          // 改变和i相关的元素
+          tabBodyItem[i].style.display = 'block';
+          this.setAttribute('class', 'tab_head_item1 active');
+        });
+      };
+
+      // 通过for循环来给每一个tabHeadItem添加移入事件
+      for (var i = 0; i < tabHeadItem.length; i++) {
+        _loop2(i);
+      }
+    }
+    inittialize();
+    tabBodyClick();
+  })();
+};
 },{"./index":4}],2:[function(require,module,exports){
 'use strict';
 
@@ -744,6 +917,8 @@ var _bottom = require('./bottom');
 (0, _bottom.boxHdArrow)();
 (0, _bottom.boxBottomOver)();
 (0, _bottom.logoHover)();
+(0, _bottom.newArrival)();
+(0, _bottom.newTopInner)();
 },{"./bottom":1,"./center":2,"./header":3,"./shortcut":6}],6:[function(require,module,exports){
 'use strict';
 

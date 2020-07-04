@@ -20,3 +20,5 @@ var _bottom = require('./bottom');
 (0, _bottom.boxHdArrow)();
 (0, _bottom.boxBottomOver)();
 (0, _bottom.logoHover)();
+(0, _bottom.newArrival)();
+(0, _bottom.newTopInner)();
