@@ -16,7 +16,10 @@ router.get('/',async(context) => {
     imageBottom: data.imageBottom,
     imageUrl1: data.imageUrl1,
     boxImage: data.imageUrl2,
-    imageUrl3: data.imageUrl3
+    imageUrl3: data.imageUrl3,
+    imageUrl4: data.imageUrl4,
+    dataTitle: data.dataTitle,
+    imageUrl5: data.imageUrl5
   });
 });
 
