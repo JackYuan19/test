@@ -407,4 +407,139 @@ exports.imageUrl3 = [
       }
     ]
   }
+];
+
+exports.imageUrl4 = [
+  {
+    imageUrl: '/image/e10ac03fc0719a2c.jpg!cc_120x120.webp',
+    title: '三星 Galaxy Z Flip（SM-F7000） 超感官灵动折叠屏 8GB+256GB 潘多拉紫',
+    content: '三星折叠屏手机',
+    price: 11999.00
+  },
+  {
+    imageUrl: '/image/6220a41ff442a60d.jpg!cc_120x120.webp',
+    title: '乐高（LEGO）IDEAS系列 2020年1月新品 16岁+【D2C旗舰店限定款】 恐龙化石 21320',
+    content: '来这里发现更多新品',
+    price: 548.90
+  },
+  {
+    imageUrl: '/image/8f2c85279222828d.jpg!cc_120x120.webp',
+    title: '博朗（Braun）男士电动剃须刀往复式刮胡刀小猎豹5系1000s（白色）',
+    content: '来这里发现更多新品',
+    price: 499.00
+  },
+  {
+    imageUrl: '/image/577d01f3b55a38a8.jpg!cc_120x120.webp',
+    title: '360儿童电话手表9X 智能语音问答定位支付手表 4G全网通20米游泳级防水视频通话拍照手表男女孩星空蓝',
+    content: '来这里发现更多新品',
+    price: 399.00
+  },
+  {
+    imageUrl: '/image/e10ac03fc0719a2c.jpg!cc_120x120.webp',
+    title: '三星 Galaxy Z Flip（SM-F7000） 超感官灵动折叠屏 8GB+256GB 潘多拉紫',
+    content: '三星折叠屏手机',
+    price: 11999.00
+  },
+  {
+    imageUrl: '/image/6220a41ff442a60d.jpg!cc_120x120.webp',
+    title: '乐高（LEGO）IDEAS系列 2020年1月新品 16岁+【D2C旗舰店限定款】 恐龙化石 21320',
+    content: '来这里发现更多新品',
+    price: 548.90
+  },
+  {
+    imageUrl: '/image/8f2c85279222828d.jpg!cc_120x120.webp',
+    title: '博朗（Braun）男士电动剃须刀往复式刮胡刀小猎豹5系1000s（白色）',
+    content: '来这里发现更多新品',
+    price: 499.00
+  },
+  {
+    imageUrl: '/image/577d01f3b55a38a8.jpg!cc_120x120.webp',
+    title: '360儿童电话手表9X 智能语音问答定位支付手表 4G全网通20米游泳级防水视频通话拍照手表男女孩星空蓝',
+    content: '来这里发现更多新品',
+    price: 399.00
+  },
+  {
+    imageUrl: '/image/e10ac03fc0719a2c.jpg!cc_120x120.webp',
+    title: '三星 Galaxy Z Flip（SM-F7000） 超感官灵动折叠屏 8GB+256GB 潘多拉紫',
+    content: '三星折叠屏手机',
+    price: 11999.00
+  },
+  {
+    imageUrl: '/image/6220a41ff442a60d.jpg!cc_120x120.webp',
+    title: '乐高（LEGO）IDEAS系列 2020年1月新品 16岁+【D2C旗舰店限定款】 恐龙化石 21320',
+    content: '来这里发现更多新品',
+    price: 548.90
+  }
+];
+exports.dataTitle = [
+  '手机',
+  '电脑整机',
+  '大家电',
+  '男装'
+];
+exports.imageUrl5 = [
+  {
+    arr: [
+      {
+        imageUrl: '/image/c301ef0306df863e.jpg!q90.webp',
+        title: 'OPPO K3 高通骁龙710 升降摄像头 VOOC闪充 8GB+128GB 星云紫 全网通4G 全面屏拍照游戏智能手机'
+      },
+      {
+        imageUrl: '/image/866518bfac170b25.jpg!q90.webp',
+        title: '荣耀10青春版 幻彩渐变 2400万AI自拍 全网通版6GB+64GB 渐变蓝 移动联通电信4G全面屏手机 双卡双待'
+      },
+      {
+        imageUrl: '/image/a36085b3c6debefc.jpg!q90.webp',
+        title: '黑鲨游戏手机2 Pro 12GB+512GB 电鸣黑 骁龙855Plus 屏幕压感 极速触控 全面屏 双卡双待 4G全网通'
+      }
+    ]
+  },
+  {
+    arr: [
+      {
+        imageUrl: '/image/4f7243824381dc31.jpg!q90.webp',
+        title: '惠普（HP）战66 商用办公台式电脑主机（九代i3-9100 8G 1TB Win10 Office WiFi蓝牙 四年上门）'
+      },
+      {
+        imageUrl: '/image/3e7807d3ee7513a9.jpg!q90.webp',
+        title: '联想（Lenovo）AIO逸 个人商务一体机台式电脑23.8英寸（i3-8145U 8G 1TB ）白'
+      },
+      {
+        imageUrl: '/image/5ce6488fN2e00e6ea.jpg!q90.webp',
+        title: '联想（Lenovo）天逸510S个人商务台式机电脑整机（i3-9100 4G 1T WiFi 蓝牙 三年上门 Win10）19.5英寸'
+      }
+    ]
+  },
+  {
+    arr: [
+      {
+        imageUrl: '/image/7acf8ad5b96f8887.jpg!q90.webp',
+        title: '康佳（KONKA）1匹 壁挂式空调 快速冷暖 定频 空调挂机 隐藏显示屏LED （纯铜管）KFR-25GW/DKG01-E3'
+      },
+      {
+        imageUrl: '/image/602ac5c80ef33e23.png!q90.webp',
+        title: '奥克斯（AUX）家用双门迷你小型冰箱 冷藏冷冻保鲜小冰箱 宿舍租房节能电冰箱 拉丝金'
+      },
+      {
+        imageUrl: '/image/ec5e62982fde6087.jpg!q90.webp',
+        title: '海尔（Haier) 滚筒洗衣机全自动 10公斤变频  99%防霉抗菌窗垫EG10014B39GU1'
+      }
+    ]
+  },
+  {
+    arr: [
+      {
+        imageUrl: '/image/4b667ac0b3d0e57a.jpg!q90.webp',
+        title: '秋冬季保暖衬衫男士加绒加厚2019修身韩版潮流青年长袖假两件男针织衫男式中老年爸爸装毛衣 968-39 XL'
+      },
+      {
+        imageUrl: '/image/5af0f0dab7c07571.jpg!q90.webp',
+        title: '菲轩丝牛仔裤男2019夏季新品男装韩版型男弹力显瘦牛仔裤男时尚休闲男士小脚休闲裤长裤 黑色 34'
+      },
+      {
+        imageUrl: '/image/e003d94fd3a50bd8.jpg!q90.webp',
+        title: '菲轩丝T恤男短袖2019夏季新品男装韩版时尚印花拼色短袖T恤衫青少年修身百搭上衣男 宝蓝色 2XL'
+      }
+    ]
+  }
 ]
