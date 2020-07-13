@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>按钮</button>
+    <script>
+      // 拿到元素
+      const button = document.getElementsByTagName('button')[0];
+      // 给button按钮添加点击事件,通过点击事件来获取后端数据
+      button.onclick = function(event) {
+        // 阻止默认事件
+        event.stopPropagation();
+        // 通过fetch来获取后端数据
+        fetch('/GueesYouLinkIt').then(data => {
+          return data.text();
+        }).then(res => {
+           console.log(res); 
+           console.log(res.length);
+        }).catch(err => {
+          console.log(err);
+        })
+      }
+    </script>
+</body>
+</html>

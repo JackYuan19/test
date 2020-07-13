@@ -1446,6 +1446,414 @@
                  </div>
                </div>
             </div>
+            <div id="J_nice-shop" class="box nice-shop">
+               <div class="box_hd">
+                  <a href="javascript:void(0);" class="box_hd_lk">
+                    <h3 class="box_tit">逛好店</h3>
+                    <i class="box_hd_arrow1"></i> 
+                  </a> 
+               </div>
+               <div class="box_bd">
+                 <div class="nice-shop__container">
+                    {{each dataTitle1 list index}}
+                    <a href="javascript:void(0);" class="shop-item">
+                     <div class="shop-item__info">
+                       <div class="item-title">{{list.title}}</div>
+                       <div class="item-tags">
+                          <span class="text-tag text-tag--origin">自营</span>
+                          <span class="text-tag text-tag--theme">{{list.content}}</span>
+                          <div class="item-social">
+                            {{list.number}}万人关注
+                          </div>
+                       </div>
+                       <div class="shop-item__cover">
+                          <img src="{{list.imageUrl}}">
+                       </div>
+                     </div>
+                    </a>
+                    {{/each}}
+                 </div>
+               </div>
+            </div>
+            <div id="J_coupon" class="box coupon box_last">
+               <div class="box_hd">
+                  <a href="javascript:void(0);" class="box_hd_lk">
+                    <h3 class="box_tit">领券中心</h3>
+                    <i class="box_hd_arrow1"></i> 
+                  </a> 
+               </div>
+               <div class="box_bd">
+                 <div class="coupon_inner">
+                   <div class="coupon_list">
+                     {{each dataTitle2  list index}}
+                     <div class="coupon_item">
+                        <a href="javascript:void(0);" class="coupon_lk">
+                         <div class="coupon_lk_wrap">
+                           <div class="lazyimg lazyimg_loaded coupon_img">
+                              <img src="{{list.imageUrl}}" class="lazyimg_img">
+                           </div>
+                           <div class="coupon_info">
+                             <div class="mod_price coupon_price">
+                                <i>￥</i>
+                                <span>{{list.price}}</span>
+                             </div>
+                             <div class="coupon_limit">满{{list.price1}}元可用</div>
+                             <div class="coupon_desc">{{list.content}}</div>
+                           </div>
+                           <div class="coupon_more">
+                              <div class="coupon_more_inner">更多好券</div>
+                              <div class="coupon_more_arrow">></div>
+                           </div>
+                         </div>
+                        </a>
+                      </div>
+                     {{/each}}
+                   </div>
+                 </div>
+               </div>
+            </div>
+          </div>
+        </div>
+        <div class="jd_container" id="J_channels" aria-label="频道广场" >
+         <div class="channelsB">
+           <div class="floorhd">
+             <div class="grid_c1 floorhd_inner">
+                <h3 class="floorhd_tit">频道广场</h3>
+             </div>
+           </div>
+           <div class="channels_block channels_block_1">
+            <div class="channels_block_wrapper">
+              <div class="channels_item channels_item_1">
+               <a class="channels_item_link" href="javascript:void(0);">
+                 <div class="lazyimg lazyimg_loaded channels_item_img">
+                   <img src="/image/a5ecdfb4e36d7a23.png!cc_290x370.webp" class="lazyimg_img">
+                 </div>
+               </a>
+              </div>
+              <div class="channels_item channels_item_2">
+               <a class="channels_item_link" href="javascript:void(0);">
+                  <div class="lazyimg lazyimg_loaded channels_item_img">
+                    <img src="/image/2ca94aa8f8134f21.jpg!cc_290x370.webp" class="lazyimg_img">
+                  </div>
+               </a>
+              </div>
+              <div class="channels_item channels_item_3">
+                <div class="channels_item_title">
+                  <span class="channels_item_title_main">企业购</span>
+                  <span class="channels_item_title_aside">一站式企业采购平台</span>
+                </div> 
+                <div class="channels_item_imgs">
+                  <a class="channels_item_link" href="javascript:void(0);">
+                    <div class="lazyimg lazyimg_loaded channels_item_img">
+                      <img src="/image/591aa979N6db8d23f.jpg!cc_100x100.webp">
+                    </div>
+                  </a>
+                  <a class="channels_item_link" href="javascript:void(0);">
+                     <div class="lazyimg lazyimg_loaded channels_item_img">
+                       <img src="/image/338d6c40b993dc15.jpg!cc_100x100.webp">
+                     </div>
+                   </a>
+               </div>
+              </div>
+              <div class="channels_item channels_item_4">
+               <div class="channels_item_title">
+                 <span class="channels_item_title_main">Joy寻宝</span>
+                 <span class="channels_item_title_aside">懂你的Joy</span>
+               </div> 
+               <div class="channels_item_imgs">
+                 <a class="channels_item_link" href="javascript:void(0);">
+                   <div class="lazyimg lazyimg_loaded channels_item_img">
+                     <img src="/image/8f0fff0e91ffecf2.jpg!cc_100x100.webp">
+                   </div>
+                 </a>
+                 <a class="channels_item_link" href="javascript:void(0);">
+                    <div class="lazyimg lazyimg_loaded channels_item_img">
+                      <img src="/image/5ce41430N7bb10f75.jpg!cc_100x100.webp">
+                    </div>
+                  </a>
+              </div>
+              </div>
+              <div class="channels_item channels_item_5">
+               <div class="channels_item_title">
+                 <span class="channels_item_title_main">京东超市</span>
+                 <span class="channels_item_title_aside">一站式囤生活好物</span>
+               </div> 
+               <div class="channels_item_imgs">
+                 <a class="channels_item_link" href="javascript:void(0);">
+                   <div class="lazyimg lazyimg_loaded channels_item_img">
+                     <img src="/image/5ae74720N203d91fc.jpg!cc_100x100.webp">
+                   </div>
+                 </a>
+                 <a class="channels_item_link" href="javascript:void(0);">
+                    <div class="lazyimg lazyimg_loaded channels_item_img">
+                      <img src="/image/1bb57b2d72a9b4b1.jpg!cc_100x100.webp">
+                    </div>
+                  </a>
+              </div>
+              </div>
+              <div class="channels_item channels_item_6">
+               <div class="channels_item_title">
+                 <span class="channels_item_title_main">家装城</span>
+                 <span class="channels_item_title_aside">用心装好家一站式购齐</span>
+               </div> 
+               <div class="channels_item_imgs">
+                 <a class="channels_item_link" href="javascript:void(0);">
+                   <div class="lazyimg lazyimg_loaded channels_item_img">
+                     <img src="/image/23558e32158a4d5a.jpg!cc_100x100.webp">
+                   </div>
+                 </a>
+                 <a class="channels_item_link" href="javascript:void(0);">
+                    <div class="lazyimg lazyimg_loaded channels_item_img">
+                      <img src="/image/5acdd2f0Nd3d32a66.jpg!cc_100x100.webp">
+                    </div>
+                  </a>
+              </div>
+              </div>
+              <div class="channels_item channels_item_7">
+               <div class="channels_item_title">
+                 <span class="channels_item_title_main">生鲜馆</span>
+                 <span class="channels_item_title_aside">尝遍天下鲜</span>
+               </div> 
+               <div class="channels_item_imgs">
+                 <a class="channels_item_link" href="javascript:void(0);">
+                   <div class="lazyimg lazyimg_loaded channels_item_img">
+                     <img src="/image/9ea0ec040a1a9b41.jpg!cc_100x100.webp">
+                   </div>
+                 </a>
+                 <a class="channels_item_link" href="javascript:void(0);">
+                    <div class="lazyimg lazyimg_loaded channels_item_img">
+                      <img src="/image/5cde7655N7ac9ae10.jpg!cc_100x100.webp">
+                    </div>
+                  </a>
+              </div>
+              </div>
+              <div class="channels_item channels_item_8">
+               <div class="channels_item_title">
+                 <span class="channels_item_title_main">京东健康</span>
+                 <span class="channels_item_title_aside">健康才是真的好</span>
+               </div> 
+               <div class="channels_item_imgs">
+                 <a class="channels_item_link" href="javascript:void(0);">
+                   <div class="lazyimg lazyimg_loaded channels_item_img">
+                     <img src="/image/5bf52963N4edba1fb.jpg!cc_100x100.webp">
+                   </div>
+                 </a>
+                 <a class="channels_item_link" href="javascript:void(0);">
+                    <div class="lazyimg lazyimg_loaded channels_item_img">
+                      <img src="/image/9300c92a851713c6.jpg!cc_100x100.webp">
+                    </div>
+                  </a>
+              </div>
+              </div>
+              <div class="channels_item channels_item_9">
+               <div class="channels_item_title">
+                 <span class="channels_item_title_main">京东国际</span>
+                 <span class="channels_item_title_aside">一站尽享进口好物</span>
+               </div> 
+               <div class="channels_item_imgs">
+                 <a class="channels_item_link" href="javascript:void(0);">
+                   <div class="lazyimg lazyimg_loaded channels_item_img">
+                     <img src="/image/db8110765f0246d5.jpg!cc_100x100.webp">
+                   </div>
+                 </a>
+                 <a class="channels_item_link" href="javascript:void(0);">
+                    <div class="lazyimg lazyimg_loaded channels_item_img">
+                      <img src="/image/33c0cf7a33045049.jpg!cc_100x100.webp">
+                    </div>
+                  </a>
+              </div>
+              </div>
+              <div class="channels_item channels_item_10">
+               <div class="channels_item_title">
+                 <span class="channels_item_title_main">个护清洁馆</span>
+                 <span class="channels_item_title_aside">欢洗四季 洁净生活</span>
+               </div> 
+               <div class="channels_item_imgs">
+                 <a class="channels_item_link" href="javascript:void(0);">
+                   <div class="lazyimg lazyimg_loaded channels_item_img">
+                     <img src="/image/58524d83N4f644deb.jpg!cc_100x100.webp">
+                   </div>
+                 </a>
+                 <a class="channels_item_link" href="javascript:void(0);">
+                    <div class="lazyimg lazyimg_loaded channels_item_img">
+                      <img src="/image/4f24ef290fe37eef.jpg!cc_100x100.webp">
+                    </div>
+                  </a>
+              </div>
+              </div>
+              <div class="channels_item channels_item_11">
+               <div class="channels_item_title">
+                 <span class="channels_item_title_main">司法拍卖</span>
+                 <span class="channels_item_title_aside">法拍房可贷款</span>
+               </div> 
+               <div class="channels_item_imgs">
+                 <a class="channels_item_link" href="javascript:void(0);">
+                   <div class="lazyimg lazyimg_loaded channels_item_img">
+                     <img src="/image/57035e3b5dce78c8.png!cc_100x100.webp">
+                   </div>
+                 </a>
+                 <a class="channels_item_link" href="javascript:void(0);">
+                    <div class="lazyimg lazyimg_loaded channels_item_img">
+                      <img src="/image/d562207aa97ba91a.jpg!cc_100x100.webp">
+                    </div>
+                  </a>
+              </div>
+              </div>
+              <div class="channels_item channels_item_12">
+               <div class="channels_item_title">
+                 <span class="channels_item_title_main">京东工业品</span>
+                 <span class="channels_item_title_aside">一站式工业品采购平台</span>
+               </div> 
+               <div class="channels_item_imgs">
+                 <a class="channels_item_link" href="javascript:void(0);">
+                   <div class="lazyimg lazyimg_loaded channels_item_img">
+                     <img src="/image/af0a37367543dda3.jpg!cc_100x100.webp">
+                   </div>
+                 </a>
+                 <a class="channels_item_link" href="javascript:void(0);">
+                    <div class="lazyimg lazyimg_loaded channels_item_img">
+                      <img src="/image/591fd8ec5075f83b.jpg!cc_100x100.webp">
+                    </div>
+                  </a>
+              </div>
+              </div>
+              <div class="channels_item channels_item_13">
+               <div class="channels_item_title">
+                 <span class="channels_item_title_main">京东金融</span>
+                 <span class="channels_item_title_aside">会理财 懂生活</span>
+               </div> 
+               <div class="channels_item_imgs">
+                 <a class="channels_item_link" href="javascript:void(0);">
+                   <div class="lazyimg lazyimg_loaded channels_item_img">
+                     <img src="/image/2f1daf302659471b.jpg!cc_100x100.webp">
+                   </div>
+                 </a>
+                 <a class="channels_item_link" href="javascript:void(0);">
+                    <div class="lazyimg lazyimg_loaded channels_item_img">
+                      <img src="/image/6dc53738a6df44c5.png!cc_100x100.webp">
+                    </div>
+                  </a>
+              </div>
+              </div>
+              <div class="channels_item channels_item_14">
+               <div class="channels_item_title">
+                 <span class="channels_item_title_main">汽车生活</span>
+                 <span class="channels_item_title_aside">放心养车 爱车无忧</span>
+               </div> 
+               <div class="channels_item_imgs">
+                 <a class="channels_item_link" href="javascript:void(0);">
+                   <div class="lazyimg lazyimg_loaded channels_item_img">
+                     <img src="/image/9f47094b87f0e166.jpg!cc_100x100 (1).webp">
+                   </div>
+                 </a>
+                 <a class="channels_item_link" href="javascript:void(0);">
+                    <div class="lazyimg lazyimg_loaded channels_item_img">
+                      <img src="/image/5bc7eda9Nc0c5d398.jpg!cc_100x100.webp">
+                    </div>
+                  </a>
+              </div>
+              </div>
+              <div class="channels_item channels_item_15">
+               <div class="channels_item_title">
+                 <span class="channels_item_title_main">京东京造</span>
+                 <span class="channels_item_title_aside">京东自有品牌</span>
+               </div> 
+               <div class="channels_item_imgs">
+                 <a class="channels_item_link" href="javascript:void(0);">
+                   <div class="lazyimg lazyimg_loaded channels_item_img">
+                     <img src="/image/2a9e45fbfa62c0db.jpg!cc_100x100.webp">
+                   </div>
+                 </a>
+                 <a class="channels_item_link" href="javascript:void(0);">
+                    <div class="lazyimg lazyimg_loaded channels_item_img">
+                      <img src="/image/510bb141ce58cb45.jpg!cc_100x100.webp">
+                    </div>
+                  </a>
+              </div>
+              </div>
+              <div class="channels_item channels_item_16">
+               <div class="channels_item_title">
+                 <span class="channels_item_title_main">中外名酒</span>
+                 <span class="channels_item_title_aside">享全球美酒品美好生活</span>
+               </div> 
+               <div class="channels_item_imgs">
+                 <a class="channels_item_link" href="javascript:void(0);">
+                   <div class="lazyimg lazyimg_loaded channels_item_img">
+                     <img src="/image/86005f80ee349ce4.jpg!cc_100x100.webp">
+                   </div>
+                 </a>
+                 <a class="channels_item_link" href="javascript:void(0);">
+                    <div class="lazyimg lazyimg_loaded channels_item_img">
+                      <img src="/image/6e4c3170bb29e301.jpg!cc_100x100.webp">
+                    </div>
+                  </a>
+              </div>
+              </div>
+              <div class="channels_item channels_item_17">
+               <div class="channels_item_title">
+                 <span class="channels_item_title_main">食品饮料</span>
+                 <span class="channels_item_title_aside">吃货嘉年华</span>
+               </div> 
+               <div class="channels_item_imgs">
+                 <a class="channels_item_link" href="javascript:void(0);">
+                   <div class="lazyimg lazyimg_loaded channels_item_img">
+                     <img src="/image/5a5d97c9N1bdd0e89.jpg!cc_100x100.webp">
+                   </div>
+                 </a>
+                 <a class="channels_item_link" href="javascript:void(0);">
+                    <div class="lazyimg lazyimg_loaded channels_item_img">
+                      <img src="/image/c3ff150ac3e4c6ae.jpg!cc_100x100.webp">
+                    </div>
+                  </a>
+              </div>
+              </div>
+              <div class="channels_item channels_item_18">
+               <div class="channels_item_title">
+                 <span class="channels_item_title_main">京东美妆</span>
+                 <span class="channels_item_title_aside">京东美妆 懂你的美</span>
+               </div> 
+               <div class="channels_item_imgs">
+                 <a class="channels_item_link" href="javascript:void(0);">
+                   <div class="lazyimg lazyimg_loaded channels_item_img">
+                     <img src="/image/e044cf4fc8c2e284.jpg!cc_100x100.webp">
+                   </div>
+                 </a>
+                 <a class="channels_item_link" href="javascript:void(0);">
+                    <div class="lazyimg lazyimg_loaded channels_item_img">
+                      <img src="/image/78223347e593767e.jpg!cc_100x100.webp">
+                    </div>
+                  </a>
+              </div>
+              </div>
+            </div>
+           </div>
+         </div>
+        </div>
+        <div id="J_feeds">
+          <div class="more2">
+            <div class="floorhd">
+               <div class="grid_c1 floorhd_inner">
+                  <h3 class="floorhd_tit">为你推荐</h3>
+               </div>
+            </div>
+            <div class="grid_c1 feed-tab-wrapper">
+              <ul class="feed-tab">
+                {{each dataTitle3 list index}}
+                <li class="feed-tab__item">
+                  <div class="feed-tab__item-title">
+                    <span class="feed-tab__item-title-text">{{list.title}}</span>
+                  </div>
+                  <div class="feed-tab__item-desc">{{list.content}}</div>
+                </li>
+                {{/each}}
+              </ul>
+            </div>
+            <div class="grid_c1 more2_inner">
+              <div>
+                <ul id="feedContent0" class="more2_list clearfix">
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
