@@ -19,10 +19,25 @@ router.get('/',async(context) => {
     imageUrl3: data.imageUrl3,
     imageUrl4: data.imageUrl4,
     dataTitle: data.dataTitle,
-    imageUrl5: data.imageUrl5
+    imageUrl5: data.imageUrl5,
+    dataTitle1: data.dataTitle1,
+    dataTitle2: data.dataTitle2,
+    dataTitle3: data.dataTitle3
   });
+}).get('/GueesYouLinkIt',async(context) => {
+  // 返回你喜欢的数据
+  context.body = data.guessYouLinkIt;
+}).get('/intelligentPioneer',async(context) => {
+  context.body = data.intelligentPioneer;
+}).get('/homeQualityProducts',async(context) => {
+  context.body = data.homeQualityProducts;
+}).get('/fashionInsider',async(context) => {
+  context.body = data.fashionInsider;
+}).get('/shopping',async(context) => {
+  context.body = data.shopping;
+}).get('/ImportedGoods',async(context) => {
+  context.body = data.ImportedGoods;
 });
-
 render(app,{
     root: path.join(__dirname, 'html'),
     extname: '.html',
