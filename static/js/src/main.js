@@ -9,7 +9,9 @@ import {
     boxBottomOver,
     logoHover,
     newArrival,
-    newTopInner
+    newTopInner,
+    getfeedTabItem,
+    getBottomData
 } 
 from './bottom'
 shortcutLeft();
@@ -26,3 +28,5 @@ boxBottomOver();
 logoHover();
 newArrival();
 newTopInner();
+getfeedTabItem();
+getBottomData();

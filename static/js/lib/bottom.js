@@ -2,6 +2,12 @@
 
 var _index = require('./index');
 
+var _axios = require('axios');
+
+var _axios2 = _interopRequireDefault(_axios);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 exports.bottomSeckill = function () {
   (function () {
     // 拿到countdown-desc中的strong
@@ -545,5 +551,99 @@ exports.newTopInner = function () {
     }
     inittialize();
     tabBodyClick();
+  })();
+};
+exports.getfeedTabItem = function () {
+  (function () {
+    // 拿到数据
+    var feedTabItem = document.getElementsByClassName('feed-tab__item');
+    var feedTabItemTitleText = document.getElementsByClassName('feed-tab__item-title-text');
+    // 设置初始值
+    function getOne() {
+      feedTabItem[0].setAttribute('class', 'feed-tab__item feed-tab__item--active');
+      //减少feedTabItem中的长度
+      // 通过for循环来给feedTabItem来设置属性
+      for (var i = 0; i < 5; i++) {
+        var div = document.createElement('div');
+        div.setAttribute('class', 'feed-tab__item-gap');
+        // 往feedTabItem添加元素
+        feedTabItem[i].appendChild(div);
+      }
+    }
+    getOne();
+  })();
+};
+
+exports.getBottomData = function () {
+  (function () {
+    // 获取元素
+    var more2List = document.getElementsByClassName('more2_list')[0];
+    var feedTabItem = document.getElementsByClassName('feed-tab__item');
+    var arr = [0, 1, 2, 3, 4, 5];
+    // 请求路由
+    function getUrl() {
+      var url = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : "/GueesYouLinkIt";
+
+      _axios2.default.get(url).then(function (data) {
+        var result = '';
+        for (var i = 0; i < data.data.length; i++) {
+          result += '<li class="more2_item more2_item_good hover-on">\n          <span class="more2_item_gdot"></span>\n          <a class="more2_lk">\n            <div class="lazyimg lazyimg_loaded more2_img">\n               <img src="' + data.data[i].imageUrl + '" class="lazyimg_img">\n            </div>\n            <div class="more2_info">\n               <p class="more2_info_name">\n                 ' + data.data[i].title + '\n               </p>\n              <div class="more2_info_price more2_info_price_plus more2_info_price_newcomer">\n                <div class="mod_price">\n                   <i>\uFFE5</i>\n                   <span class="more2_info_price_txt">\n                      ' + data.data[i].price + '.\n                      <span class="more2_info_price_txt-decimal">' + data.data[i].decimal + '</span>\n                   </span>\n                </div>\n                <div class="more2_price_plus">\n                  <div class="more2_discount">\u5238</div>\n                </div>\n                <div class="more2_item_hover">\n                  <div class="more2_item_delete">\n                  </div>\n                  <div class="more2_item_hd">\n                    <div class="more2_item_btn more2_btn_find enable">\n                       <i class="more2_btn_icon"></i>   \n                       <span>\u627E\u76F8\u4F3C</span>\n                    </div>\n                 </div>\n                </div>\n              </div>\n            </div>\n          </a>\n       </li>\n          ';
+        }
+        more2List.innerHTML = result;
+      }).catch(function (err) {
+        console.log(err);
+      });
+    }
+    // 点击事件
+    function feedClick() {
+      var _loop3 = function _loop3(i) {
+        feedTabItem[i].onclick = function (event) {
+          // 阻止默认事件
+          event.stopPropagation();
+          //
+          callback(i);
+        };
+      };
+
+      // 通过for循环来变量数组
+      for (var i = 0; i < feedTabItem.length; i++) {
+        _loop3(i);
+      }
+    }
+    function callback(i) {
+      var url = '';
+      switch (i) {
+        case 0:
+          url = '/GueesYouLinkIt';
+          break;
+        case 1:
+          url = '/intelligentPioneer';
+          break;
+        case 2:
+          url = '/homeQualityProducts';
+          break;
+        case 3:
+          url = '/fashionInsider';
+          break;
+        case 4:
+          url = '/shopping';
+          break;
+        case 5:
+          url = '/ImportedGoods';
+          break;
+      }
+      // 通过filterArr来过滤数组
+      var toArr = (0, _index.filterArr)(arr, i);
+      // 通过toArr来改变和i不相干的值
+      toArr.map(function (ele) {
+        feedTabItem[ele].setAttribute('class', 'feed-tab__item');
+      });
+      // 改变和i相关的值
+      feedTabItem[i].setAttribute('class', 'feed-tab__item feed-tab__item--active');
+      // 获取后端值
+      getUrl(url);
+    }
+    getUrl();
+    feedClick();
   })();
 };

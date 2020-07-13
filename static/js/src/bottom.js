@@ -1,4 +1,5 @@
 import {filterArr} from './index'
+import Axios from 'axios';
 exports.bottomSeckill = () => {
   (function(){
     // 拿到countdown-desc中的strong
@@ -521,5 +522,128 @@ exports.newTopInner = () => {
     }
     inittialize();
     tabBodyClick();
+  }());
+}
+exports.getfeedTabItem = () => {
+  (function() {
+    // 拿到数据
+    const feedTabItem = document.getElementsByClassName('feed-tab__item');
+    const feedTabItemTitleText = document.getElementsByClassName('feed-tab__item-title-text');
+    // 设置初始值
+    function getOne() {
+      feedTabItem[0].setAttribute('class','feed-tab__item feed-tab__item--active');
+      //减少feedTabItem中的长度
+      // 通过for循环来给feedTabItem来设置属性
+      for(let i = 0; i < 5; i++) {
+        let div = document.createElement('div');
+        div.setAttribute('class','feed-tab__item-gap');
+        // 往feedTabItem添加元素
+        feedTabItem[i].appendChild(div);
+      }
+    }
+    getOne();
+  }());
+}
+
+exports.getBottomData = () => {
+  (function() {
+    // 获取元素
+    const more2List = document.getElementsByClassName('more2_list')[0];
+    const feedTabItem = document.getElementsByClassName('feed-tab__item');
+    const arr = [0,1,2,3,4,5];
+    // 请求路由
+    function getUrl(url="/GueesYouLinkIt") {
+      Axios.get(url).then(data => {
+        var result = '';
+        for(let i = 0; i < data.data.length; i++) {
+          result += `<li class="more2_item more2_item_good hover-on">
+          <span class="more2_item_gdot"></span>
+          <a class="more2_lk">
+            <div class="lazyimg lazyimg_loaded more2_img">
+               <img src="${data.data[i].imageUrl}" class="lazyimg_img">
+            </div>
+            <div class="more2_info">
+               <p class="more2_info_name">
+                 ${data.data[i].title}
+               </p>
+              <div class="more2_info_price more2_info_price_plus more2_info_price_newcomer">
+                <div class="mod_price">
+                   <i>￥</i>
+                   <span class="more2_info_price_txt">
+                      ${data.data[i].price}.
+                      <span class="more2_info_price_txt-decimal">${data.data[i].decimal}</span>
+                   </span>
+                </div>
+                <div class="more2_price_plus">
+                  <div class="more2_discount">券</div>
+                </div>
+                <div class="more2_item_hover">
+                  <div class="more2_item_delete">
+                  </div>
+                  <div class="more2_item_hd">
+                    <div class="more2_item_btn more2_btn_find enable">
+                       <i class="more2_btn_icon"></i>   
+                       <span>找相似</span>
+                    </div>
+                 </div>
+                </div>
+              </div>
+            </div>
+          </a>
+       </li>
+          `;
+        }
+        more2List.innerHTML = result;
+      }).catch(err => {
+        console.log(err);
+      })
+    }
+    // 点击事件
+    function feedClick() {
+      // 通过for循环来变量数组
+      for(let i = 0; i < feedTabItem.length; i++) {
+        feedTabItem[i].onclick = function(event) {
+          // 阻止默认事件
+          event.stopPropagation();
+          //
+          callback(i);
+        }
+      }
+    }
+    function callback(i) {
+      let url = '';
+      switch(i) {
+        case 0:
+          url = '/GueesYouLinkIt'
+          break;
+        case 1:
+          url = '/intelligentPioneer'
+          break;
+        case 2:
+          url = '/homeQualityProducts'
+          break;
+        case 3:
+          url = '/fashionInsider'
+          break;
+        case 4:
+          url = '/shopping'
+          break;
+        case 5:
+          url = '/ImportedGoods'
+          break;
+      }
+      // 通过filterArr来过滤数组
+      const toArr = filterArr(arr,i);
+      // 通过toArr来改变和i不相干的值
+      toArr.map(ele => {
+        feedTabItem[ele].setAttribute('class','feed-tab__item');
+      });
+      // 改变和i相关的值
+      feedTabItem[i].setAttribute('class','feed-tab__item feed-tab__item--active');
+      // 获取后端值
+      getUrl(url);
+    }
+    getUrl();
+    feedClick();
   }());
 }

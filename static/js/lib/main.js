@@ -22,3 +22,5 @@ var _bottom = require('./bottom');
 (0, _bottom.logoHover)();
 (0, _bottom.newArrival)();
 (0, _bottom.newTopInner)();
+(0, _bottom.getfeedTabItem)();
+(0, _bottom.getBottomData)();
