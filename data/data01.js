@@ -542,4 +542,443 @@ exports.imageUrl5 = [
       }
     ]
   }
+];
+
+exports.dataTitle1 = [
+  {
+    imageUrl: '/image/3b0c1c4da6fcb189.jpg (1).webp',
+    title: '雅迪京东自营旗舰店',
+    number: 4.3,
+    content: '随心所动'
+  },
+  {
+    imageUrl: '/image/c236872608ca40e6.jpg.webp',
+    title: '惠氏（Wyeth）京东自营官方旗舰店',
+    number: 609.5,
+    content: '育儿心经'
+  }
+];
+
+exports.dataTitle2 = [
+  {
+    imageUrl: '/image/974378b6d79d447b.jpg!cc_50x50.webp',
+    price: 100,
+    price1: 199,
+    content: '仅可购买跨店铺活动商品'
+  },
+  {
+    imageUrl: '/image/7ba495e433852aa0.jpg!cc_50x50.webp',
+    price: 500,
+    price1: 5000,
+    content: '仅可购买指定iPhone 11商品'
+  },
+  {
+    imageUrl: '/image/f2269a029cf20bda.jpg!cc_50x50.webp',
+    price: 180,
+    price1: 300,
+    content: '仅可购买部分三只松鼠商品'
+  }
+];
+exports.dataTitle3 = [
+  {
+    title: '精选',
+    content: '猜你喜欢'
+  },
+  {
+    title: '智能先锋',
+    content: '大电器城'
+  },
+  {
+    title: '居家优品',
+    content: '品质生活'
+  },
+  {
+    title: '超市百货',
+    content: '百货生鲜'
+  },
+  {
+    title: '时尚达人',
+    content: '美妆穿搭'
+  },
+  {
+    title: '进口好物',
+    content: '京东国际'
+  }
+];
+
+exports.guessYouLinkIt = [
+  {
+    imageUrl: '/image/3a19487da3762ae8.jpg.webp',
+    title: `锦荔枝2020新款夏季冰丝席凉席三件套1.5米1.8m床可折叠空调软席子1.2可机洗1.35m可水洗 
+    欣欣花开 1.2/1.35米床200*230cm配1个枕套fafaffafa`,
+    price: 850,
+    decimal: 00   
+  },
+  {
+    imageUrl: '/image/5bc462b9N0d4e9a44.jpg.webp',
+    title: `汽车蜡去污上光新车蜡车蜡白色车打蜡划痕修复腊保养防护 收藏拍下优惠并且送纳米毛巾+打蜡海绵`,
+    price: 68,
+    decimal: 00   
+  },
+  {
+    imageUrl: '/image/5277f9abb5e1d163.png.webp',
+    title: `【第2份0元】渣渣灰 麻辣小龙虾即食 香辣吮指小龙虾尾加热即食速食虾球 230g/盒`,
+    price: 49,
+    decimal: 00   
+  },
+  {
+    imageUrl: '/image/f5e8bec6ba6795e2.jpg.webp',
+    title: `林氏木业 实木床 双人床日式床1.5米1.8米 卧室家具套装组合 LS046A3 LS046A4普通床 1.8*2.0`,
+    price: 2680,
+    decimal: 00   
+  },
+  {
+    imageUrl: '/image/3ee150bb4dae6c03.jpg.webp',
+    title: `【咨询送空调扇】木月 衣柜 北欧简约现代推拉门组合衣柜 移门大衣橱卧室家具 雅致 单衣柜 2.0米`,
+    price: 1869,
+    decimal: 00   
+  },
+  {
+    imageUrl: '/image/72038693bf68074c.jpg.webp',
+    title: `不锈钢晾衣架落地折叠卧室内阳台凉衣架家用晾晒衣杆架晒被子神器 【1.4米】 大`,
+    price: 158,
+    decimal: 00   
+  },
+  {
+    imageUrl: '/image/3b295281de34d0fc.jpg.webp',
+    title: `正版古索高版本联名椰子鞋男350v2黑天使满天星休闲情侣鞋亚洲限定网面透气男女跑步鞋子白冰淇淋运动鞋 美洲限定 41`,
+    price: 208,
+    decimal: 00   
+  },
+  {
+    imageUrl: '/image/4d3628dffb1c9cbd.jpg.webp',
+    title: `佳佰X木挚所集Morris意式轻奢科技布艺沙发北欧小户型客厅四人简约现代`,
+    price: 3320,
+    decimal: 00   
+  },
+  {
+    imageUrl: '/image/3cea41f16c6516f6.jpg.webp',
+    title: `304不锈钢电热水壶10L大容量鸣笛自动断电壶加厚4L5L6L7L防干烧 加厚4升自动断电`,
+    price: 128,
+    decimal: 00   
+  },
+  {
+    imageUrl: '/image/e4962d6682e9a73a.jpg.webp',
+    title: `野菊花枕头单人助睡眠成人决明子整头助眠花草失眠安神硬枕头 全荞麦壳填充 圣保罗兰`,
+    price: 178,
+    decimal: 00   
+  }
+];
+
+exports.intelligentPioneer = [
+  {
+    imageUrl: '/image/79bbe8c4d15474e9.jpg.webp',
+    title: `中国电信 电信卡全国不限量京东卡手机卡月租大王卡上网卡电话卡日租卡电信无限流量卡通话卡号码`,
+    price: 19,
+    decimal: 00   
+  },
+  {
+    imageUrl: '/image/c00a373623f3eb2e.jpg.webp',
+    title: `Redmi 10X 4G Helio G85游戏芯 4800万超清四摄 5020mAh大电量 小孔全面屏 128GB大存储 4GB+128GB 天际蓝`,
+    price: 999,
+    decimal: 00   
+  },
+  {
+    imageUrl: '/image/3dbab9a722a8bb44.jpg.webp',
+    title: `【二手9成新】华硕（ASUS）游戏显卡GTX750 960 970 1060 1070 1080Ti 品牌机拆机显卡 512显存`,
+    price: 28,
+    decimal: 00   
+  },
+  {
+    imageUrl: '/image/a2b8a5af96499b72.jpg.webp',
+    title: `华为 HUAWEI 畅享Z 5G 天玑800 5G SoC 芯片4800万高感光夜拍6.5英寸90HZ畅滑屏6GB+64GB深海蓝5G双模全网通`,
+    price: 1699,
+    decimal: 00   
+  },
+  {
+    imageUrl: '/image/80374e30bfd5d522.jpg.webp',
+    title: `【二手9成新】微星/华硕猛禽GTX980Ti 6G GTX980 970 960 4G台式机独立显卡 微星（MSI）GTX970 GAMING 4G红龙`,
+    price: 730,
+    decimal: 00   
+  },
+  {
+    imageUrl: '/image/90e9f649916652b6.jpg.webp',
+    title: `华为 HUAWEI nova 5i 后置AI四摄 极点全面屏 前置2400万高清摄像头 6GB+128GB 苏音蓝 全网通双卡双待`,
+    price: 1499,
+    decimal: 00   
+  },
+  {
+    imageUrl: '/image/3275a359ed4f6308.jpg.webp',
+    title: `中国电信 电信流量卡星卡大王卡抖音卡京东日租卡电信卡无限流量上网卡不限速电话卡手机号码卡全国通用5g 【至尊大王卡】含20元话费`,
+    price: 19,
+    decimal: 00   
+  },
+  {
+    imageUrl: '/image/944c603de7af7c42.jpg.webp',
+    title: `荣耀X10 Max 5G双模 7.09英寸超大屏 5000mAh大电池 多功能NFC 双扬声器 全网通 8GB+128GB竞速蓝`,
+    price: 2499,
+    decimal: 00   
+  },
+  {
+    imageUrl: '/image/0de635840fa47627.png.webp',
+    title: `【二手99新】Apple/苹果 iPad 2017 平板电脑 ipad 平板 2017款 99新 （颜色下单备注） 32G WIF版本 +壳膜 原装充电器`,
+    price: 1499,
+    decimal: 00   
+  },
+  {
+    imageUrl: '/image/3e08e3a8852c0cc8.jpg.webp',
+    title: `美的（Midea）12升智能精控恒温 断电记忆侧焰稳燃主动防漏气 双重防冻燃气热水器天然气JSQ22-HWA`,
+    price: 799,
+    decimal: 00   
+  }
+];
+
+exports.homeQualityProducts = [
+  {
+    imageUrl: '/image/e042a1424eed34a5.jpg.webp',
+    title: `unifree 一次性3D立体口罩含熔喷布3层防护防尘男女成人口罩 30片/盒 大童可用`,
+    price: 0,
+    decimal: 90
+  },
+  {
+    imageUrl: '/image/350905ebb68c82ab.jpg.webp',
+    title: `蓝月亮深层洁净洗衣液4斤套装：薰衣草1kg*1瓶+500g*2袋`,
+    price: 90,
+    decimal: 90
+  },
+  {
+    imageUrl: '/image/4a14ae87e934f9f0.jpg.webp',
+    title: `南极人NanJiren 枕头 高弹星级酒店枕芯 颈椎枕安睡枕头芯 单只装 一对拍2`,
+    price: 18,
+    decimal: 70
+  },
+  {
+    imageUrl: '/image/2f746f7fd360b651.jpg.webp',
+    title: `美度 24骨超大男士商务长柄晴雨伞 M5003黑色`,
+    price: 39,
+    decimal: 00
+  },
+  {
+    imageUrl: '/image/a67ed1104f9e4a7d.jpg.webp',
+    title: `糖米（Temi）儿童玩具积木桌子 大颗粒多功能幼儿园学习桌游戏桌餐椅男女孩3-6岁 2椅4桶+180大80大滑道`,
+    price: 186,
+    decimal: 00
+  },
+  {
+    imageUrl: '/image/47efff9bb53bdc3d.jpg.webp',
+    title: `南极人NanJiren 床垫床褥 1.8米床四季透气防滑软垫 席梦思榻榻米保护垫 可折叠学生家用床褥子垫被`,
+    price: 76,
+    decimal: 00
+  },
+  {
+    imageUrl: '/image/58f58704Nd2cc612f.jpg.webp',
+    title: `天堂伞 加大加固64cm*10骨三折晴雨商务伞3311E碰藏青色`,
+    price: 32,
+    decimal: 90
+  },
+  {
+    imageUrl: '/image/5500fd1d266cc792.jpg.webp',
+    title: `悦卡洗车拖把 刷车刷子软毛不伤汽车用擦车工具 2019升级款雪尼尔可伸缩长杆洗车刷(蓝色)`,
+    price: 34,
+    decimal: 90
+  },
+  {
+    imageUrl: '/image/67f872c86b0251c1.jpg.webp',
+    title: `C'mon 素色全自动伞 自开自收自动雨伞大号防风加大加固三折男士商务折叠伞58.5cm*8骨 黑色`,
+    price: 45,
+    decimal: 00
+  },
+  {
+    imageUrl: '/image/5af5770fN6a16d548.jpg.webp',
+    title: `美之扣 自制带盖冰块盒制冰盒模型 家用做冰格冰箱冻冰块雪糕模具 蓝色44格`,
+    price: 21, 
+    decimal: 90
+  }
+];
+
+exports.shopping = [
+  {
+    imageUrl: '/image/da7c8895f39292d0.jpg.webp',
+    title: '自嗨锅 自热小火锅 方便米饭煲仔饭 速食广式香肠230g',
+    price: 13,
+    decimal: 40
+  },
+  {
+    imageUrl: '/image/140f4f1e42fd75ea.jpg.webp',
+    title: '海底捞 自热火锅方便速食 清油麻辣嫩牛自煮火锅食品套餐435g',
+    price: 36,
+    decimal: 90
+  },
+  {
+    imageUrl: '/image/5bc5c86f87d9d5fe.jpg.webp',
+    title: '可口可乐 Coca-Cola 汽水 碳酸饮料 200ml*24罐 整箱装 迷你摩登罐 可口可乐公司出品',
+    price: 29,
+    decimal: 90
+  },
+  {
+    imageUrl: '/image/5bfd071fNe195c45a.jpg.webp',
+    title: '美菱 MeiLing MY-L109 家用立式双门温热型饮水机',
+    price: 159,
+    decimal: 00
+  },
+  {
+    imageUrl: '/image/5b14a771N459ffde1.jpg.webp',
+    title: '【鲜活】味库 加拿大波士顿龙虾400-500g 1只 进口海鲜水产',
+    price: 119,
+    decimal: 00
+  },
+  {
+    imageUrl: '/image/690f4ec4bec2e914.jpg.webp',
+    title: '李子柒 广西柳州特产(煮食)袋装 方便速食面粉米线 螺蛳粉 335g',
+    price: 13,
+    decimal: 90
+  },
+  {
+    imageUrl: '/image/df5afd1e54e231b1.jpg.webp',
+    title: '奥克斯（AUX） FS1613  电风扇/空气流通/落地扇/家用风扇/五叶大风量风扇/静音风扇',
+    price: 99,
+    decimal: 90
+  },
+  {
+    imageUrl: '/image/199b91fe5a73204b.jpg.webp',
+    title: '米家 小米电饭煲电饭锅C1  3升 煮粥煲汤蛋糕蒸煮一机多用 24小时智能预约 不粘锅 附赠蒸笼',
+    price: 149,
+    decimal: 00
+  },
+  {
+    imageUrl: '/image/d96a851794625f60.jpg.webp',
+    title: 'ABC KMS纤薄棉柔日夜组合10包70片(日用48片+夜用22片)卫生巾套装',
+    price: 59,
+    decimal: 90
+  },
+  {
+    imageUrl: '/image/ffec90e367764148.jpg.webp',
+    title: '戴思（DAISI）一次性医用口罩透气轻薄成人3层医用口罩50只',
+    price: 59,
+    decimal: 00
+  }
+];
+exports.fashionInsider = [
+  {
+    imageUrl: '/image/5ac31e00Nbec5028f.jpg.webp',
+    title: `欣沁 非一次性雨具雨衣雨鞋套雨靴套男女加厚底防雨鞋防水鞋套雨天防滑靴套 雨天骑行鞋套 磨砂白 XXL(43-44)`,
+    price: 19,
+    decimal: 90
+  },
+  {
+    imageUrl: '/image/5afba516Nfd35400a.jpg.webp',
+    title: `SWAROVSKI 施华洛世奇 时尚大号黑天鹅项链 女友礼物 5347329`,
+    price: 439,
+    decimal: 00
+  },
+  {
+    imageUrl: '/image/3e37b73cfda89c7f.jpg.webp',
+    title: `Lola Rose【郑爽同款】手表女英国时尚防水石英女士手表正品方形小绿表`,
+    price: 935,
+    decimal: 00
+  },
+  {
+    imageUrl: '/image/4d62d42f8ac56888.jpg.webp',
+    title: `南极人 宝宝吃饭围兜儿童罩衣无袖画画衣围裙防水反穿衣 黄色汽车 适合0-3岁`,
+    price: 19,
+    decimal: 90
+  },
+  {
+    imageUrl: '/image/abfb9a440fcce3ee.jpg.webp',
+    title: `ZHR凉鞋女一字带闪耀水钻女鞋仙女风厚底增高韩版网红百搭舒适平底鞋 INS时尚街拍潮流 米色 37`,
+    price: 149,
+    decimal: 00
+  },
+  {
+    imageUrl: '/image/a3ed3183289f934c.jpg.webp',
+    title: `【即刻拍】9.5新沛纳海LUMINOR系列男士机械精钢腕表`,
+    price: 26000,
+    decimal: 00
+  },
+  {
+    imageUrl: '/image/58c75c69Nd70fb41d.jpg.webp',
+    title: `新安代shiada 时尚双肩功能型独立内胆妈妈包母婴用品包孔DS17孔雀绿`,
+    price: 55,
+    decimal: 0
+  },
+  {
+    imageUrl: '/image/3db77a3de524d9c8.jpg.webp',
+    title: `阿玛尼(Emporio Armani) 手表 黑武士休闲皮带时尚欧美简约大气黑盘石英男士腕表礼物AR1973`,
+    price: 1790,
+    decimal: 00
+  },
+  {
+    imageUrl: '/image/5c90fc5e2f54032f.jpg.webp',
+    title: `阿玛尼（ Emporio Armani）满天星手表 女新款玫瑰金钢制表带镶钻石英轻奢女士腕表 AR11244`,
+    price: 3990,
+    decimal: 0
+  },
+  {
+    imageUrl: '/image/5a68165aN9f610f22.jpg.webp',
+    title: `SWAROVSKI 施华洛世奇 SPARKLING DANCE ROUND 跳动的心 SPARKLING  DC项链  蓝色 5279425`,
+    price: 549,
+    decimal: 00
+  }
+];
+exports.ImportedGoods = [
+  {
+    imageUrl: '/image/5ce2b8daN6edb5446.jpg.webp',
+    title: '【第二件9.9元】3个巨无霸（单果约200-180克）墨西哥牛油果鳄梨新鲜水果',
+    price: 25,
+    decimal: 90
+  },
+  {
+    imageUrl: '/image/72e0cac4a5af6d30.jpg.webp',
+    title: '日本进口 PITTA MASK 防尘口罩防花粉非一次性口罩 黑灰色 3枚装',
+    price: 39,
+    decimal: 00
+  },
+  {
+    imageUrl: '/image/0822f675f819c4ba.jpg.webp',
+    title: '韩国进口（SAMYANG）三养炸酱味拌面 700g（140g*5包入）方便面 拉面 泡面袋面速食零食品',
+    price: 26,
+    decimal: 90
+  },
+  {
+    imageUrl: '/image/d79be211e693a637.png.webp',
+    title: '三星（SAMSUNG）Galaxy Note9 全新正品4G手机 谜夜黑 6GB+128GB 美版（单卡） 全网通',
+    price: 3588,
+    decimal: 00
+  },
+  {
+    imageUrl: '/image/5ad04bccN665cd226.jpg.webp',
+    title: '安维（Anwell）美国 原味薯饼 620g 非转基因冷冻薯饼 方便速食 油炸小食 方便面食搭档 半成品菜',
+    price: 38,
+    decimal: 80
+  },
+  {
+    imageUrl: '/image/57cd3ae8N664e1fae.jpg.webp',
+    title: '韩国慕那美（monami）04008-01 纤维笔水性笔中性笔 黑色 12支/盒',
+    price: 18,
+    decimal: 00
+  },
+  {
+    imageUrl: '/image/64f89fc34fb62f64.jpg.webp',
+    title: '美果汇 进口车厘子礼盒  大樱桃  京东生鲜水果 大果2斤',
+    price: 199,
+    decimal: 90
+  },
+  {
+    imageUrl: '/image/b372ac76478ac2aa.jpg.webp',
+    title: '粤云山 顺丰 正宗高州石峡龙眼广东特产水果 5斤装',
+    price: 88,
+    decimal: 80
+  },
+  {
+    imageUrl: '/image/7f35a0e47aa31175.jpg.webp',
+    title: '农夫好牛 新西兰牛腱子1kg 进口草饲牛肉 健身食材',
+    price: 72,
+    decimal: 00
+  },
+  {
+    imageUrl: '/image/5996aa0dN26577c51.jpg.webp',
+    title: '韩国进口ZEK芝士深海鳕鱼肠鱼肉火腿肠海味小吃儿童健康即食营养休闲零食 105g',
+    price: 11,
+    decimal: 80
+  }
 ]
