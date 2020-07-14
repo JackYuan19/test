@@ -1,5 +1,5 @@
 import {shortcutLeft} from './shortcut'
-import {searchRandom,navBtnRandom} from './header'
+import {searchRandom,navBtnRandom,setHeader} from './header'
 import {middleNavImage,middleNavRight,middleRight} from './center'
 import {
     bottomSeckill,
@@ -19,6 +19,7 @@ searchRandom();
 navBtnRandom();
 middleNavImage();
 middleNavRight();
+setHeader();
 middleRight();
 bottomSeckill();
 bottomSlider();

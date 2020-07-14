@@ -70,3 +70,36 @@ exports.navBtnRandom = () => {
   }
   start();
 }
+exports.setHeader = () => {
+  (function() {
+    // 获取搜索框
+    const search = document.getElementById('search');
+    // 拿到search-logo中的元素
+    const searchLogo = document.getElementsByClassName('search-logo')[0];
+    // 拿到feed-tab-wrapper元素
+    const feedTabWrapper = document.getElementsByClassName('feed-tab-wrapper')[0];
+    //获得页面向上卷动的距离
+    function getScroll(){
+      return {
+        top: window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0
+      };
+    } 
+    window.onscroll = function() {
+      if(getScroll().top >= 500) {
+        // 设置search的class
+        search.setAttribute('class','search-fix');
+        searchLogo.style.display = 'block';
+      } else {
+        // 删除search的class
+        search.removeAttribute('class');
+        searchLogo.style.display = 'none';
+      } 
+      // 如果页面大于3100 设置feedTabWrapper的样式
+      if(getScroll().top > 3100) {
+        feedTabWrapper.setAttribute('class','grid_c1 feed-tab-wrapper feed-tab-wrapper--fixed');
+      } else if(getScroll().top <= 3050) {
+        feedTabWrapper.setAttribute('class','grid_c1 feed-tab-wrapper');
+      }
+    }
+  }());
+}
